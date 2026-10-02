@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <FactionDef ParentName="PlayerFactionBase">
+  <defName>PlayerWarren</defName>
+  <label>Warren</label>
+  <description>A player-controlled group of cavelings.</description>
+  <isPlayer>true</isPlayer>
+  <categoryTag>Tribal</categoryTag>
+  <pawnSingular>caveling</pawnSingular>
+  <pawnsPlural>cavelings</pawnsPlural>
+  <basicMemberKind>FL_Caveling</basicMemberKind>
+  <techLevel>Animal</techLevel>
+  <factionNameMaker>NamerFactionWarren</factionNameMaker>
+  <settlementNameMaker>NamerSettlementWarren</settlementNameMaker>
+  <allowedCultures>
+    <li>Corunan</li>
+  </allowedCultures>
+  <startingResearchTags>
+   <li>TribalStart</li>
+  </startingResearchTags>
+  <startingTechprintsResearchTags>
+   <li>TribalStart</li>
+   <li>TribalStartTechprints</li>
+  </startingTechprintsResearchTags>
+  <backstoryFilters>
+    <li>
+      <categories>
+        <li>Tribal</li>
+      </categories>
+    </li>
+  </backstoryFilters>
+  <factionIconPath>UI/BunFactionIcon</factionIconPath>
+  <settlementTexturePath>UI/BunSettlementIcon</settlementTexturePath>
+  <forageabilityFactor>1.7</forageabilityFactor>
+  <modExtensions>
+			<li Class="VEF.Factions.FactionDefExtension">
+			 <startingGoodwillByFactionDefs>
+				 <OutlanderCivil>-55~-70</OutlanderCivil>
+				 <Empire MayRequire="Ludeon.RimWorld.Royalty">-75~-100</Empire>
+				 <OutlanderRefugee MayRequire="Ludeon.RimWorld.Royalty">-75~-100</OutlanderRefugee>
+				 <TribeCivil>-55~-70</TribeCivil>
+         <TradersGuild MayRequire="Ludeon.RimWorld.Odyssey">-55~-70</TradersGuild>
+				 <Ancients>-100~-100</Ancients>
+				 <Insect>30~10</Insect>
+			 </startingGoodwillByFactionDefs>
+			</li>
+	</modExtensions>
+  </FactionDef>
+
+  <FactionDef ParentName="PlayerFactionBase">
+  <defName>PlayerLoneKit</defName>
+  <label>Warren</label>
+  <description>A player-controlled lone caveling.</description>
+  <isPlayer>true</isPlayer>
+  <categoryTag>Tribal</categoryTag>
+  <pawnSingular>caveling</pawnSingular>
+  <pawnsPlural>cavelings</pawnsPlural>
+  <basicMemberKind>FL_Caveling</basicMemberKind>
+  <techLevel>Animal</techLevel>
+  <factionNameMaker>NamerFactionWarren</factionNameMaker>
+  <settlementNameMaker>NamerSettlementWarren</settlementNameMaker>
+  <allowedCultures>
+    <li>Corunan</li>
+  </allowedCultures>
+  <startingResearchTags>
+   <li>TribalStart</li>
+  </startingResearchTags>
+  <startingTechprintsResearchTags>
+   <li>TribalStart</li>
+   <li>TribalStartTechprints</li>
+  </startingTechprintsResearchTags>
+  <backstoryFilters>
+    <li>
+      <categories>
+        <li>Tribal</li>
+      </categories>
+    </li>
+  </backstoryFilters>
+  <factionIconPath>UI/BunFactionIcon</factionIconPath>
+  <settlementTexturePath>UI/BunSettlementIcon</settlementTexturePath>
+  <forageabilityFactor>1.7</forageabilityFactor>
+  <modExtensions>
+			<li Class="VEF.Factions.FactionDefExtension">
+			 <startingGoodwillByFactionDefs>
+				 <Insect>30~10</Insect>
+			 </startingGoodwillByFactionDefs>
+			</li>
+	</modExtensions>
+  </FactionDef>
+
+  <RulePackDef>
+    <defName>NamerFactionWarren</defName>
+
+    <rulePack>
+      <rulesStrings>
+        <li>r_name(p=3)->[warren] of [adjective] [ofThing]</li>
+        <li>r_name->The [warren] of [ofThing]</li>
+        <li>r_name->The [warren]</li>
+        <li>r_name->[mineral] [warren]</li>
+        <li>r_name->[adjective] [mineral] [warren]</li>
+
+        <li>warren(p=3)->Warren</li>
+        <li>warren->Burrow</li>
+        <li>warren->Tunnels</li>
+        <li>warren->Caves</li>
+
+        <li>adjective->Bloodied</li>
+        <li>adjective->Torn</li>
+        <li>adjective->Singing</li>
+        <li>adjective->Forlorn</li>
+        <li>adjective->Forgotten</li>
+        <li>adjective->Lonely</li>
+        <li>adjective->Rusted</li>
+        <li>adjective->Flowering</li>
+        <li>adjective->Blooming</li>
+        <li>adjective->Stormy</li>
+        <li>adjective->Rotten</li>
+        <li>adjective->Painful</li>
+        <li>adjective->Splitting</li>
+        <li>adjective->Broken</li>
+        <li>adjective->Lightless</li>
+        <li>adjective->Deadly</li>
+
+        <li>ofThing->Thorns</li>
+        <li>ofThing->Dust</li>
+        <li>ofThing->Roses</li>
+        <li>ofThing->Thistle</li>
+        <li>ofThing->Lullabies</li>
+        <li>ofThing->Hope</li>
+        <li>ofThing->Promises</li>
+        <li>ofThing->Summers</li>
+        <li>ofThing->Winters</li>
+        <li>ofThing->Dawn</li>
+        <li>ofThing->Dusk</li>
+        <li>ofThing->Sunrise</li>
+        <li>ofThing->Sunset</li>
+        <li>ofThing->Plague</li>
+        <li>ofThing->Slaughter</li>
+        <li>ofThing->Flesh</li>
+        <li>ofThing->Crags</li>
+        <li>ofThing->Blades</li>
+        <li>ofThing->Claws</li>
+
+        <li>mineral->stone</li>
+        <li>mineral->slate</li>
+        <li>mineral->salt</li>
+        <li>mineral->basalt</li>
+        <li>mineral->marble</li>
+        <li>mineral->obsidian</li>
+        <li>mineral->steel</li>
+        <li>mineral->copper</li>
+        <li>mineral->iron</li>
+        <li>mineral->flint</li>
+        <li>mineral->tin</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+
+  <RulePackDef>
+    <defName>NamerSettlementWarren</defName>
+
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[mineral] [location]</li>
+        <li>r_name->[adjective] [location]</li>
+        <li>r_name->[adjective] [mineral] [location]</li>
+
+        <li>location->Caves</li>
+        <li>location->Forest</li>
+        <li>location->Sea</li>
+        <li>location->Shores</li>
+        <li>location->Tunnels</li>
+        <li>location->Bog</li>
+        <li>location->Swamp</li>
+        <li>location->Plain</li>
+        <li>location->Mountain</li>
+        <li>location->Valley</li>
+        <li>location->Island</li>
+        <li>location->Canyon</li>
+        <li>location->Hills</li>
+        <li>location->Plateau</li>
+
+        <li>adjective->Bloodied</li>
+        <li>adjective->Singing</li>
+        <li>adjective->Forgotten</li>
+        <li>adjective->Forlorn</li>
+        <li>adjective->Lonely</li>
+        <li>adjective->Rusted</li>
+        <li>adjective->Flowering</li>
+        <li>adjective->Blooming</li>
+        <li>adjective->Stormy</li>
+        <li>adjective->Torn</li>
+        <li>adjective->Rotten</li>
+        <li>adjective->Painful</li>
+        <li>adjective->Splitting</li>
+        <li>adjective->Broken</li>
+        <li>adjective->Lightless</li>
+        <li>adjective->Deadly</li>
+
+        <li>ofThing->Thorns</li>
+        <li>ofThing->Dust</li>
+        <li>ofThing->Plague</li>
+        <li>ofThing->Slaughter</li>
+        <li>ofThing->Flesh</li>
+        <li>ofThing->Crags</li>
+        <li>ofThing->Roses</li>
+        <li>ofThing->Thistle</li>
+        <li>ofThing->Lullabies</li>
+        <li>ofThing->Hope</li>
+        <li>ofThing->Promises</li>
+        <li>ofThing->Summers</li>
+        <li>ofThing->Winters</li>
+        <li>ofThing->Dawn</li>
+        <li>ofThing->Dusk</li>
+        <li>ofThing->Sunrise</li>
+        <li>ofThing->Sunset</li>
+        <li>ofThing->Blades</li>
+        <li>ofThing->Claws</li>
+
+        <li>mineral->stone</li>
+        <li>mineral->slate</li>
+        <li>mineral->salt</li>
+        <li>mineral->basalt</li>
+        <li>mineral->marble</li>
+        <li>mineral->obsidian</li>
+        <li>mineral->steel</li>
+        <li>mineral->copper</li>
+        <li>mineral->iron</li>
+        <li>mineral->flint</li>
+        <li>mineral->tin</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>

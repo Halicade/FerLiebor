@@ -1,0 +1,787 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+
+    <!-- ===== Bad Eating ===== -->
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThoughtDef[defName="AteRawHumanlikeMeat"]/nullifyingGenes</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="AteRawHumanlikeMeat"]</xpath>
+            <value>
+                <nullifyingGenes>
+                    <li>Fer_Liebor_BadEating</li>
+                </nullifyingGenes>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="AteRawHumanlikeMeat"]/nullifyingGenes</xpath>
+            <value>
+                <li>Fer_Liebor_BadEating</li>
+            </value>
+        </match>
+    </Operation>
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThoughtDef[defName="AteHumanlikeMeatDirect"]/nullifyingGenes</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="AteHumanlikeMeatDirect"]</xpath>
+            <value>
+                <nullifyingGenes>
+                    <li>Fer_Liebor_BadEating</li>
+                </nullifyingGenes>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="AteHumanlikeMeatDirect"]/nullifyingGenes</xpath>
+            <value>
+                <li>Fer_Liebor_BadEating</li>
+            </value>
+        </match>
+    </Operation>
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThoughtDef[defName="AteHumanlikeMeatAsIngredient"]/nullifyingGenes</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="AteHumanlikeMeatAsIngredient"]</xpath>
+            <value>
+                <nullifyingGenes>
+                    <li>Fer_Liebor_BadEating</li>
+                </nullifyingGenes>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="AteHumanlikeMeatAsIngredient"]/nullifyingGenes</xpath>
+            <value>
+                <li>Fer_Liebor_BadEating</li>
+            </value>
+        </match>
+    </Operation>
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThoughtDef[defName="ButcheredHumanlikeCorpse"]/nullifyingGenes</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="ButcheredHumanlikeCorpse"]</xpath>
+            <value>
+                <nullifyingGenes>
+                    <li>Fer_Liebor_BadEating</li>
+                </nullifyingGenes>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="ButcheredHumanlikeCorpse"]/nullifyingGenes</xpath>
+            <value>
+                <li>Fer_Liebor_BadEating</li>
+            </value>
+        </match>
+    </Operation>
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThoughtDef[defName="KnowButcheredHumanlikeCorpse"]/nullifyingGenes</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="KnowButcheredHumanlikeCorpse"]</xpath>
+            <value>
+                <nullifyingGenes>
+                    <li>Fer_Liebor_BadEating</li>
+                </nullifyingGenes>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="KnowButcheredHumanlikeCorpse"]/nullifyingGenes</xpath>
+            <value>
+                <li>Fer_Liebor_BadEating</li>
+            </value>
+        </match>
+    </Operation>
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThoughtDef[defName="ButcheredHumanlikeCorpseOpinion"]/nullifyingGenes</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="ButcheredHumanlikeCorpseOpinion"]</xpath>
+            <value>
+                <nullifyingGenes>
+                    <li>Fer_Liebor_BadEating</li>
+                </nullifyingGenes>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="ButcheredHumanlikeCorpseOpinion"]/nullifyingGenes</xpath>
+            <value>
+                <li>Fer_Liebor_BadEating</li>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThoughtDef[defName="AteRawFood"]/nullifyingGenes</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="AteRawFood"]</xpath>
+            <value>
+                <nullifyingGenes>
+                    <li>Fer_Liebor_BadEating</li>
+                </nullifyingGenes>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="AteRawFood"]/nullifyingGenes</xpath>
+            <value>
+                <li>Fer_Liebor_BadEating</li>
+            </value>
+        </match>
+    </Operation>
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThoughtDef[defName="AteKibble"]/nullifyingGenes</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="AteKibble"]</xpath>
+            <value>
+                <nullifyingGenes>
+                    <li>Fer_Liebor_BadEating</li>
+                </nullifyingGenes>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="AteKibble"]/nullifyingGenes</xpath>
+            <value>
+                <li>Fer_Liebor_BadEating</li>
+            </value>
+        </match>
+    </Operation>
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThoughtDef[defName="AteCorpse"]/nullifyingGenes</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="AteCorpse"]</xpath>
+            <value>
+                <nullifyingGenes>
+                    <li>Fer_Liebor_BadEating</li>
+                </nullifyingGenes>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="AteCorpse"]/nullifyingGenes</xpath>
+            <value>
+                <li>Fer_Liebor_BadEating</li>
+            </value>
+        </match>
+    </Operation>
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThoughtDef[defName="AteRottenFood"]/nullifyingGenes</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="AteRottenFood"]</xpath>
+            <value>
+                <nullifyingGenes>
+                    <li>Fer_Liebor_BadEating</li>
+                </nullifyingGenes>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="AteRottenFood"]/nullifyingGenes</xpath>
+            <value>
+                <li>Fer_Liebor_BadEating</li>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThoughtDef[defName="AteBabyFood"]/nullifyingGenes</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="AteBabyFood"]</xpath>
+            <value>
+                <nullifyingGenes>
+                    <li>Fer_Liebor_BadEating</li>
+                </nullifyingGenes>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="AteBabyFood"]/nullifyingGenes</xpath>
+            <value>
+                <li>Fer_Liebor_BadEating</li>
+            </value>
+        </match>
+    </Operation>
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThoughtDef[defName="AteInsectMeatDirect"]/nullifyingGenes</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="AteInsectMeatDirect"]</xpath>
+            <value>
+                <nullifyingGenes>
+                    <li>Fer_Liebor_BadEating</li>
+                </nullifyingGenes>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="AteInsectMeatDirect"]/nullifyingGenes</xpath>
+            <value>
+                <li>Fer_Liebor_BadEating</li>
+            </value>
+        </match>
+    </Operation>
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThoughtDef[defName="AteInsectMeatAsIngredient"]/nullifyingGenes</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="AteInsectMeatAsIngredient"]</xpath>
+            <value>
+                <nullifyingGenes>
+                    <li>Fer_Liebor_BadEating</li>
+                </nullifyingGenes>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="AteInsectMeatAsIngredient"]/nullifyingGenes</xpath>
+            <value>
+                <li>Fer_Liebor_BadEating</li>
+            </value>
+        </match>
+    </Operation>
+
+
+    <!-- ===== Savage ===== -->
+
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThoughtDef[defName="HumanLeatherApparelSad"]/nullifyingGenes</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="HumanLeatherApparelSad"]</xpath>
+            <value>
+                <nullifyingGenes>
+                    <li>Fer_Liebor_Savage</li>
+                </nullifyingGenes>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="HumanLeatherApparelSad"]/nullifyingGenes</xpath>
+            <value>
+                <li>Fer_Liebor_Savage</li>
+            </value>
+        </match>
+    </Operation>
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThoughtDef[defName="KnowGuestExecuted"]/nullifyingGenes</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="KnowGuestExecuted"]</xpath>
+            <value>
+                <nullifyingGenes>
+                    <li>Fer_Liebor_Savage</li>
+                </nullifyingGenes>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="KnowGuestExecuted"]/nullifyingGenes</xpath>
+            <value>
+                <li>Fer_Liebor_Savage</li>
+            </value>
+        </match>
+    </Operation>
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThoughtDef[defName="KnowGuestOrganHarvested"]/nullifyingGenes</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="KnowGuestOrganHarvested"]</xpath>
+            <value>
+                <nullifyingGenes>
+                    <li>Fer_Liebor_Savage</li>
+                </nullifyingGenes>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="KnowGuestOrganHarvested"]/nullifyingGenes</xpath>
+            <value>
+                <li>Fer_Liebor_Savage</li>
+            </value>
+        </match>
+    </Operation>
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThoughtDef[defName="RotStinkLingering"]/nullifyingGenes</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="RotStinkLingering"]</xpath>
+            <value>
+                <nullifyingGenes>
+                    <li>Fer_Liebor_Savage</li>
+                </nullifyingGenes>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="RotStinkLingering"]/nullifyingGenes</xpath>
+            <value>
+                <li>Fer_Liebor_Savage</li>
+            </value>
+        </match>
+    </Operation>
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThoughtDef[defName="AteWithoutTable"]/nullifyingGenes</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="AteWithoutTable"]</xpath>
+            <value>
+                <nullifyingGenes>
+                    <li>Fer_Liebor_Savage</li>
+                </nullifyingGenes>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="AteWithoutTable"]/nullifyingGenes</xpath>
+            <value>
+                <li>Fer_Liebor_Savage</li>
+            </value>
+        </match>
+    </Operation>
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThoughtDef[defName="SleepDisturbed"]/nullifyingGenes</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="SleepDisturbed"]</xpath>
+            <value>
+                <nullifyingGenes>
+                    <li>Fer_Liebor_Savage</li>
+                </nullifyingGenes>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="SleepDisturbed"]/nullifyingGenes</xpath>
+            <value>
+                <li>Fer_Liebor_Savage</li>
+            </value>
+        </match>
+    </Operation>
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThoughtDef[defName="ApparelDamaged"]/nullifyingGenes</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="ApparelDamaged"]</xpath>
+            <value>
+                <nullifyingGenes>
+                    <li>Fer_Liebor_Savage</li>
+                </nullifyingGenes>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="ApparelDamaged"]/nullifyingGenes</xpath>
+            <value>
+                <li>Fer_Liebor_Savage</li>
+            </value>
+        </match>
+    </Operation>
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThoughtDef[defName="SoakingWet"]/nullifyingGenes</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="SoakingWet"]</xpath>
+            <value>
+                <nullifyingGenes>
+                    <li>Fer_Liebor_Savage</li>
+                </nullifyingGenes>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="SoakingWet"]/nullifyingGenes</xpath>
+            <value>
+                <li>Fer_Liebor_Savage</li>
+            </value>
+        </match>
+    </Operation>
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThoughtDef[defName="DeadMansApparel"]/nullifyingGenes</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="DeadMansApparel"]</xpath>
+            <value>
+                <nullifyingGenes>
+                    <li>Fer_Liebor_Savage</li>
+                </nullifyingGenes>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="DeadMansApparel"]/nullifyingGenes</xpath>
+            <value>
+                <li>Fer_Liebor_Savage</li>
+            </value>
+        </match>
+    </Operation>
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThoughtDef[defName="SleptOutside"]/nullifyingGenes</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="SleptOutside"]</xpath>
+            <value>
+                <nullifyingGenes>
+                    <li>Fer_Liebor_Savage</li>
+                </nullifyingGenes>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="SleptOutside"]/nullifyingGenes</xpath>
+            <value>
+                <li>Fer_Liebor_Savage</li>
+            </value>
+        </match>
+    </Operation>
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThoughtDef[defName="SleptOnGround"]/nullifyingGenes</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="SleptOnGround"]</xpath>
+            <value>
+                <nullifyingGenes>
+                    <li>Fer_Liebor_Savage</li>
+                </nullifyingGenes>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="SleptOnGround"]/nullifyingGenes</xpath>
+            <value>
+                <li>Fer_Liebor_Savage</li>
+            </value>
+        </match>
+    </Operation>
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThoughtDef[defName="SleptInBedroom"]/nullifyingGenes</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="SleptInBedroom"]</xpath>
+            <value>
+                <nullifyingGenes>
+                    <li>Fer_Liebor_Savage</li>
+                </nullifyingGenes>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="SleptInBedroom"]/nullifyingGenes</xpath>
+            <value>
+                <li>Fer_Liebor_Savage</li>
+            </value>
+        </match>
+    </Operation>
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThoughtDef[defName="SleptInBarracks"]/nullifyingGenes</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="SleptInBarracks"]</xpath>
+            <value>
+                <nullifyingGenes>
+                    <li>Fer_Liebor_Savage</li>
+                </nullifyingGenes>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="SleptInBarracks"]/nullifyingGenes</xpath>
+            <value>
+                <li>Fer_Liebor_Savage</li>
+            </value>
+        </match>
+    </Operation>
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThoughtDef[defName="Pretty"]/nullifyingGenes</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="Pretty"]</xpath>
+            <value>
+                <nullifyingGenes>
+                    <li>Fer_Liebor_Savage</li>
+                </nullifyingGenes>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="Pretty"]/nullifyingGenes</xpath>
+            <value>
+                <li>Fer_Liebor_Savage</li>
+            </value>
+        </match>
+    </Operation>
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThoughtDef[defName="Ugly"]/nullifyingGenes</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="Ugly"]</xpath>
+            <value>
+                <nullifyingGenes>
+                    <li>Fer_Liebor_Savage</li>
+                </nullifyingGenes>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="Ugly"]/nullifyingGenes</xpath>
+            <value>
+                <li>Fer_Liebor_Savage</li>
+            </value>
+        </match>
+    </Operation>
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThoughtDef[defName="Disfigured"]/nullifyingGenes</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="Disfigured"]</xpath>
+            <value>
+                <nullifyingGenes>
+                    <li>Fer_Liebor_Savage</li>
+                </nullifyingGenes>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="Disfigured"]/nullifyingGenes</xpath>
+            <value>
+                <li>Fer_Liebor_Savage</li>
+            </value>
+        </match>
+    </Operation>
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThoughtDef[defName="Incestuous"]/nullifyingGenes</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="Incestuous"]</xpath>
+            <value>
+                <nullifyingGenes>
+                    <li>Fer_Liebor_Savage</li>
+                </nullifyingGenes>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="Incestuous"]/nullifyingGenes</xpath>
+            <value>
+                <li>Fer_Liebor_Savage</li>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThoughtDef[defName="PrisonerBanishedToDie"]/nullifyingGenes</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="PrisonerBanishedToDie"]</xpath>
+            <value>
+                <nullifyingGenes>
+                    <li>Fer_Liebor_Savage</li>
+                </nullifyingGenes>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="PrisonerBanishedToDie"]/nullifyingGenes</xpath>
+            <value>
+                <li>Fer_Liebor_Savage</li>
+            </value>
+        </match>
+    </Operation>
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThoughtDef[defName="Naked"]/nullifyingGenes</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="Naked"]</xpath>
+            <value>
+                <nullifyingGenes>
+                    <li>Fer_Liebor_Savage</li>
+                </nullifyingGenes>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="Naked"]/nullifyingGenes</xpath>
+            <value>
+                <li>Fer_Liebor_Savage</li>
+            </value>
+        </match>
+    </Operation>
+
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThoughtDef[defName="CheatedOnMe"]/nullifyingGenes</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="CheatedOnMe"]</xpath>
+            <value>
+                <nullifyingGenes>
+                    <li>Fer_Liebor_Savage</li>
+                </nullifyingGenes>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="CheatedOnMe"]/nullifyingGenes</xpath>
+            <value>
+                <li>Fer_Liebor_Savage</li>
+            </value>
+        </match>
+    </Operation>
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThoughtDef[defName="BrokeUpWithMe"]/nullifyingGenes</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="BrokeUpWithMe"]</xpath>
+            <value>
+                <nullifyingGenes>
+                    <li>Fer_Liebor_Savage</li>
+                </nullifyingGenes>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="BrokeUpWithMe"]/nullifyingGenes</xpath>
+            <value>
+                <li>Fer_Liebor_Savage</li>
+            </value>
+        </match>
+    </Operation>
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThoughtDef[defName="DivorcedMe"]/nullifyingGenes</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="DivorcedMe"]</xpath>
+            <value>
+                <nullifyingGenes>
+                    <li>Fer_Liebor_Savage</li>
+                </nullifyingGenes>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="DivorcedMe"]/nullifyingGenes</xpath>
+            <value>
+                <li>Fer_Liebor_Savage</li>
+            </value>
+        </match>
+    </Operation>
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThoughtDef[defName="RebuffedMyRomanceAttempt"]/nullifyingGenes</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="RebuffedMyRomanceAttempt"]</xpath>
+            <value>
+                <nullifyingGenes>
+                    <li>Fer_Liebor_Savage</li>
+                </nullifyingGenes>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="RebuffedMyRomanceAttempt"]/nullifyingGenes</xpath>
+            <value>
+                <li>Fer_Liebor_Savage</li>
+            </value>
+        </match>
+    </Operation>
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThoughtDef[defName="FailedRomanceAttemptOnMe"]/nullifyingGenes</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="FailedRomanceAttemptOnMe"]</xpath>
+            <value>
+                <nullifyingGenes>
+                    <li>Fer_Liebor_Savage</li>
+                </nullifyingGenes>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="FailedRomanceAttemptOnMe"]/nullifyingGenes</xpath>
+            <value>
+                <li>Fer_Liebor_Savage</li>
+            </value>
+        </match>
+    </Operation>
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThoughtDef[defName="FailedRomanceAttemptOnMeLowOpinionMood"]/nullifyingGenes</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="FailedRomanceAttemptOnMeLowOpinionMood"]</xpath>
+            <value>
+                <nullifyingGenes>
+                    <li>Fer_Liebor_Savage</li>
+                </nullifyingGenes>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="FailedRomanceAttemptOnMeLowOpinionMood"]/nullifyingGenes</xpath>
+            <value>
+                <li>Fer_Liebor_Savage</li>
+            </value>
+        </match>
+    </Operation>
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThoughtDef[defName="RejectedMyProposal"]/nullifyingGenes</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="RejectedMyProposal"]</xpath>
+            <value>
+                <nullifyingGenes>
+                    <li>Fer_Liebor_Savage</li>
+                </nullifyingGenes>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="RejectedMyProposal"]/nullifyingGenes</xpath>
+            <value>
+                <li>Fer_Liebor_Savage</li>
+            </value>
+        </match>
+    </Operation>
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThoughtDef[defName="RejectedMyProposalMood"]/nullifyingGenes</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="RejectedMyProposalMood"]</xpath>
+            <value>
+                <nullifyingGenes>
+                    <li>Fer_Liebor_Savage</li>
+                </nullifyingGenes>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="RejectedMyProposalMood"]/nullifyingGenes</xpath>
+            <value>
+                <li>Fer_Liebor_Savage</li>
+            </value>
+        </match>
+    </Operation>
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThoughtDef[defName="IRejectedTheirProposal"]/nullifyingGenes</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="IRejectedTheirProposal"]</xpath>
+            <value>
+                <nullifyingGenes>
+                    <li>Fer_Liebor_Savage</li>
+                </nullifyingGenes>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="IRejectedTheirProposal"]/nullifyingGenes</xpath>
+            <value>
+                <li>Fer_Liebor_Savage</li>
+            </value>
+        </match>
+    </Operation>
+
+
+    <!-- ===== Bloodlust ===== -->
+
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThoughtDef[defName="ObservedLayingCorpse"]/nullifyingGenes</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="ObservedLayingCorpse"]</xpath>
+            <value>
+                <nullifyingGenes>
+                    <li>Fer_Liebor_Bloodlust</li>
+                </nullifyingGenes>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="ObservedLayingCorpse"]/nullifyingGenes</xpath>
+            <value>
+                <li>Fer_Liebor_Bloodlust</li>
+            </value>
+        </match>
+    </Operation>
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThoughtDef[defName="ObservedLayingRottingCorpse"]/nullifyingGenes</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="ObservedLayingRottingCorpse"]</xpath>
+            <value>
+                <nullifyingGenes>
+                    <li>Fer_Liebor_Bloodlust</li>
+                </nullifyingGenes>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="ObservedLayingRottingCorpse"]/nullifyingGenes</xpath>
+            <value>
+                <li>Fer_Liebor_Bloodlust</li>
+            </value>
+        </match>
+    </Operation>
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThoughtDef[defName="HarmedMe"]/nullifyingGenes</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="HarmedMe"]</xpath>
+            <value>
+                <nullifyingGenes>
+                    <li>Fer_Liebor_Bloodlust</li>
+                </nullifyingGenes>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="HarmedMe"]/nullifyingGenes</xpath>
+            <value>
+                <li>Fer_Liebor_Bloodlust</li>
+            </value>
+        </match>
+    </Operation>
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThoughtDef[defName="KilledChild"]/nullifyingGenes</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="KilledChild"]</xpath>
+            <value>
+                <nullifyingGenes>
+                    <li>Fer_Liebor_Bloodlust</li>
+                </nullifyingGenes>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="KilledChild"]/nullifyingGenes</xpath>
+            <value>
+                <li>Fer_Liebor_Bloodlust</li>
+            </value>
+        </match>
+    </Operation>
+
+</Patch>

@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <FactionDef ParentName="TribeRoughBase">
+    <defName>CivilWarren</defName>
+    <label>civil caveling warren</label>
+    <description>Fer'Liebor are, generally, not considered to be particularly good neighbors. Though most of the world considers them to be by and large wretched, cruel, savage vermin, their resilience and aptitude for clawing their way to survival in the most hostile of environments makes them formidable foes, and persistent problems.
+
+In spite of their near-animalistic technological level, you'd be remiss to underestimate them: their pack tactics, brutality, and the deadly sharpness of claw and tooth will make quick work of the unprepared, foolish, or overconfident. When the tide comes for you, your best hope is fire, or prayer.
+
+This particular warren is cautious, but civil. Though it will be difficult to ally them, they remain open to the notion of peace with those not of their kin.</description>
+    <factionIconPath>UI/BunFactionIcon</factionIconPath>
+    <pawnSingular>caveling</pawnSingular>
+    <pawnsPlural>cavelings</pawnsPlural>
+    <autoFlee>true</autoFlee>
+    <earliestRaidDays>30</earliestRaidDays>
+    <hostileToFactionlessHumanlikes>False</hostileToFactionlessHumanlikes>
+    <naturalEnemy>false</naturalEnemy>
+    <permanentEnemy>false</permanentEnemy>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <Fer_Liebor>999</Fer_Liebor>
+      </xenotypeChances>
+    </xenotypeSet>
+    <colorSpectrum Inherit="False">
+      <li>(0.80, 0.75, 0.95)</li>
+      <li>(0.80, 0.75, 0.95)</li>
+      <li>(0.80, 0.85, 0.95)</li>
+    </colorSpectrum>
+    <requiredCountAtGameStart>0</requiredCountAtGameStart>
+    <startingCountAtWorldCreation>1</startingCountAtWorldCreation>
+    <basicMemberKind>FL_Caveling</basicMemberKind>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>Tribal</li>
+        </categories>
+      </li>
+    </backstoryFilters>
+    <techLevel>Animal</techLevel>
+    <factionNameMaker>NamerFactionCivilWarren</factionNameMaker>
+    <settlementNameMaker>NamerSettlementCivilWarren</settlementNameMaker>
+    <raidLootMaker>WarrenCivilRaidLootMaker</raidLootMaker>
+    <raidLootValueFromPointsCurve>
+      <points>
+        <li>(35,     15)</li>
+        <li>(100,   120)</li>
+        <li>(1000,  500)</li>
+        <li>(2000,  800)</li>
+        <li>(4000, 1000)</li>
+      </points>
+    </raidLootValueFromPointsCurve>
+    <modExtensions>
+			<li Class="VEF.Factions.FactionDefExtension">
+			 <startingGoodwillByFactionDefs>
+				 <PlayerWarren>50~10</PlayerWarren>
+         <FeralWarren>-20~40</FeralWarren>
+         <PlayerTribe>-45~-60</PlayerTribe>
+         <PlayerColony>-55~-70</PlayerColony>
+         <OutlanderCivil>-55~-70</OutlanderCivil>
+				 <Empire MayRequire="Ludeon.RimWorld.Royalty">-75~-100</Empire>
+				 <OutlanderRefugee MayRequire="Ludeon.RimWorld.Royalty">-75~-100</OutlanderRefugee>
+				 <TribeCivil>-45~-60</TribeCivil>
+         <TradersGuild MayRequire="Ludeon.RimWorld.Odyssey">-55~-70</TradersGuild>
+				 <Ancients>-90~-100</Ancients>
+				 <Insect>30~10</Insect>
+			 </startingGoodwillByFactionDefs>
+			</li>
+  	</modExtensions>
+    <disallowedMemes IsNull="True"/>
+    <structureMemeWeights MayRequire="Ludeon.RimWorld.Ideology" Inherit="False">
+      <Structure_Animist>5</Structure_Animist>
+      <AM_Structure_Neolithic MayRequire="sarg.alphamemes">3</AM_Structure_Neolithic>
+      <Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistEmbodied>
+    </structureMemeWeights>
+    <allowedMemes MayRequire="Ludeon.RimWorld.Ideology" Inherit="False">
+      <li>Tunneler</li>
+      <li>FemaleSupremacy</li>
+      <li>AnimalPersonhood</li>
+      <li>Cannibal</li>
+      <li>NaturePrimacy</li>
+      <li MayRequire="sarg.alphamemes">AM_Structure_Neolithic</li>
+      <li MayRequire="vanillaexpanded.vmemese">VFEA_Isolationist</li>
+      <li MayRequire="vanillaexpanded.vmemese">VME_Astrology</li>
+    </allowedMemes>
+    <styles MayRequire="Ludeon.RimWorld.Ideology" Inherit="False">
+      <li>Animalist</li>
+      <li>Totemic</li>
+    </styles>
+    <canStageAttacks>true</canStageAttacks>
+    <apparelStuffFilter>
+      <thingDefs>
+        <li>Leather_Wolf</li>
+        <li>Leather_Heavy</li>
+        <li>Leather_Patch</li>
+        <li>Leather_Pig</li>
+      </thingDefs>
+    </apparelStuffFilter>
+
+    <pawnGroupMakers Inherit="False">
+      <li>
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <Feral_Fledgling>5</Feral_Fledgling>
+          <Feral_Hunter>10</Feral_Hunter>
+          <Feral_Protector>5</Feral_Protector>
+          <Feral_Matriarch>1</Feral_Matriarch>
+          <Megaspider>0.75</Megaspider>
+        </options>
+      </li>
+      <li>
+        <!-- breach-capable fights, breachers plus ranged with melee mix-ins -->
+        <kindDef>Combat</kindDef>
+        <commonality>5</commonality>
+        <options>
+          <Feral_Digger>10</Feral_Digger>
+          <Feral_Fledgling>5</Feral_Fledgling>
+          <Feral_Hunter>10</Feral_Hunter>
+          <Feral_Protector>5</Feral_Protector>
+          <Feral_Matriarch>1</Feral_Matriarch>
+          <Megaspider>0.75</Megaspider>
+      </options>
+      </li>
+      <li>
+        <!-- Peaceful -->
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <!--<Feral_Kit>10</Feral_Kit>-->
+          <Feral_Fledgling>20</Feral_Fledgling>
+          <Feral_Hunter>15</Feral_Hunter>
+          <Feral_Protector>10</Feral_Protector>
+        </options>
+      </li>
+      <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+          <Feral_Trader>1</Feral_Trader>
+        </traders>
+        <guards>
+          <Feral_Fledgling>5</Feral_Fledgling>
+          <Feral_Hunter>20</Feral_Hunter>
+          <Feral_Protector>10</Feral_Protector>
+          <Megascarab>3</Megascarab>
+          <Spelopede>3</Spelopede>
+          <Megaspider>0.75</Megaspider>
+        </guards>
+        <carriers>
+          <Yak>5</Yak>
+          <Donkey>6</Donkey>
+          <Alpaca>2.5</Alpaca>
+        </carriers>
+      </li>
+      <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <Feral_Fledgling>10</Feral_Fledgling>
+          <Feral_Hunter>20</Feral_Hunter>
+          <Feral_Protector>10</Feral_Protector>
+          <Feral_Matriarch>3</Feral_Matriarch>
+			    <Megascarab>3</Megascarab>
+			    <Spelopede>2</Spelopede>
+          <Megaspider>0.75</Megaspider>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <modExtensions>
+      <li Class="VEF.Factions.FactionDefExtension">
+        <allowedBiomes>
+        <li>BorealForest</li>
+        <li>Tundra</li>
+        <li>ColdBog</li>
+        <li MayRequire="Ludeon.RimWorld.Odyssey">GlacialPlain</li>
+        <li MayRequire="BiomesTeam.BiomesCaverns">BMT_CrystalCaverns</li>
+        <li MayRequire="BiomesTeam.BiomesCaverns">BMT_EarthenDepths</li>
+        <li MayRequire="BiomesTeam.BiomesCaverns">BMT_FungalForest</li>
+        </allowedBiomes>
+      </li>
+    </modExtensions>
+  </FactionDef>
+
+  <ThingSetMakerDef>
+    <defName>WarrenCivilRaidLootMaker</defName>
+    <root Class="ThingSetMaker_MarketValue">
+      <fixedParams>
+        <filter>
+          <thingDefs>
+            <li>Silver</li>
+            <li>Jade</li>
+            <li>MedicineHerbal</li>
+            <li>InsectJelly</li>
+            <li>Pemmican</li>
+          </thingDefs>
+        </filter>
+      </fixedParams>
+    </root>
+  </ThingSetMakerDef>
+
+  <RulePackDef>
+    <defName>NamerFactionCivilWarren</defName>
+
+    <rulePack>
+      <rulesStrings>
+        <li>r_name(p=3)->[warren] of [adjective] [ofThing]</li>
+        <li>r_name->The [warren] of [ofThing]</li>
+        <li>r_name->The [warren]</li>
+        <li>r_name->[mineral] [warren]</li>
+        <li>r_name->[adjective] [mineral] [warren]</li>
+
+        <li>warren(p=3)->Warren</li>
+        <li>warren->Burrow</li>
+        <li>warren->Tunnels</li>
+        <li>warren->Caves</li>
+
+        <li>adjective->Bloodied</li>
+        <li>adjective->Singing</li>
+        <li>adjective->Forgotten</li>
+        <li>adjective->Forlorn</li>
+        <li>adjective->Lonely</li>
+        <li>adjective->Rusted</li>
+        <li>adjective->Flowering</li>
+        <li>adjective->Blooming</li>
+        <li>adjective->Stormy</li>
+        <li>adjective->Torn</li>
+        <li>adjective->Lightless</li>
+
+        <li>ofThing->Thorns</li>
+        <li>ofThing->Dust</li>
+        <li>ofThing->Roses</li>
+        <li>ofThing->Thistle</li>
+        <li>ofThing->Lullabies</li>
+        <li>ofThing->Hope</li>
+        <li>ofThing->Promises</li>
+        <li>ofThing->Summers</li>
+        <li>ofThing->Winters</li>
+        <li>ofThing->Dawn</li>
+        <li>ofThing->Dusk</li>
+        <li>ofThing->Sunrise</li>
+        <li>ofThing->Sunset</li>
+        <li>ofThing->Blades</li>
+        <li>ofThing->Claws</li>
+
+        <li>mineral->stone</li>
+        <li>mineral->slate</li>
+        <li>mineral->salt</li>
+        <li>mineral->basalt</li>
+        <li>mineral->marble</li>
+        <li>mineral->obsidian</li>
+        <li>mineral->steel</li>
+        <li>mineral->copper</li>
+        <li>mineral->iron</li>
+        <li>mineral->flint</li>
+        <li>mineral->tin</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+
+  <RulePackDef>
+    <defName>NamerSettlementCivilWarren</defName>
+
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[mineral] [location]</li>
+        <li>r_name->[adjective] [location]</li>
+        <li>r_name->[adjective] [mineral] [location]</li>
+
+        <li>location->Caves</li>
+        <li>location->Forest</li>
+        <li>location->Sea</li>
+        <li>location->Shores</li>
+        <li>location->Tunnels</li>
+        <li>location->Bog</li>
+        <li>location->Swamp</li>
+        <li>location->Plain</li>
+        <li>location->Mountain</li>
+        <li>location->Valley</li>
+        <li>location->Island</li>
+        <li>location->Canyon</li>
+        <li>location->Hills</li>
+        <li>location->Plateau</li>
+
+        <li>adjective->Bloodied</li>
+        <li>adjective->Singing</li>
+        <li>adjective->Forgotten</li>
+        <li>adjective->Forlorn</li>
+        <li>adjective->Lonely</li>
+        <li>adjective->Rusted</li>
+        <li>adjective->Flowering</li>
+        <li>adjective->Blooming</li>
+        <li>adjective->Stormy</li>
+        <li>adjective->Torn</li>
+        <li>adjective->Lightless</li>
+
+        <li>ofThing->Thorns</li>
+        <li>ofThing->Dust</li>
+        <li>ofThing->Roses</li>
+        <li>ofThing->Thistle</li>
+        <li>ofThing->Lullabies</li>
+        <li>ofThing->Hope</li>
+        <li>ofThing->Promises</li>
+        <li>ofThing->Summers</li>
+        <li>ofThing->Winters</li>
+        <li>ofThing->Dawn</li>
+        <li>ofThing->Dusk</li>
+        <li>ofThing->Sunrise</li>
+        <li>ofThing->Sunset</li>
+        <li>ofThing->Blades</li>
+        <li>ofThing->Claws</li>
+
+        <li>mineral->stone</li>
+        <li>mineral->slate</li>
+        <li>mineral->salt</li>
+        <li>mineral->basalt</li>
+        <li>mineral->marble</li>
+        <li>mineral->obsidian</li>
+        <li>mineral->steel</li>
+        <li>mineral->copper</li>
+        <li>mineral->iron</li>
+        <li>mineral->flint</li>
+        <li>mineral->tin</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<XenotypeDef>
+		<defName>Fer_Liebor</defName>
+		<label>Fer'Liebor</label>
+		<description>Originally designed by a now long since fallen supremacist empire, the Lieborin were created to be the enslaved workforce and army of their warmonger rulers. Their natural weapons, proficiency with dumb labor and close-quarter combats, alongside their improbably fast reproduction and aversion to intellectual pursuits made them the perfect mass-produced biological machines for their masters.\n\nTo say they are far removed from their original xenotype would be an understatement. Left scattered on whichever planets they had been assigned to for hundreds of years after a systems-wide rebellion took down their empire, some have taken to the Rim's harsh conditions in more extreme ways than others.\n\nGenerations of inbreeding and survival in dangerous, insect-infested cave systems magnified their naturally aggressive and reclusive nature a thousandfold, giving them a tendency to tear out throats first, ask questions later. Having long since adapted to the underground, they boast a hunched, animalistic stature, pallid fur and baleful pink-red eyes, with brittle, coarse fur and heat-sensitive skin which ignite with morbid ease.\n\nDespite their hatred for natural light and ineptitude at research, their insane healing factor and incredibly brutal disposition still makes them a dangerous foe when encountered in their natural underground habitat.</description>
+		<descriptionShort>Wretched little cave-dwelling savages with a resemblance to lapines, the Fer'Liebor are a species as vicious as they are primitive.</descriptionShort>
+		<iconPath>UI/XenoTypeLiebor</iconPath>
+		<inheritable>true</inheritable>
+		<nameMaker>NamerPersonFer_Liebor</nameMaker>
+        <chanceToUseNameMaker>100</chanceToUseNameMaker>
+		<genes>
+			<li>Fer_Liebor_Ear</li>
+			<li>Fer_Liebor_Eyes</li>
+			<li>Fer_Liebor_Tail</li>
+			<li>Fer_Liebor_NaturalWeapons</li>
+			<li>Fer_Liebor_Mayflies</li>
+			<li>Fer_Liebor_GrowsQuickly</li>
+			<li>Fer_Liebor_Savage</li>
+			<li>Fer_Liebor_Nimble</li>
+			<li>Fer_Liebor_BadEating</li>
+			<li>Fer_Liebor_Pregnancy</li>
+			<li>Fer_Liebor_Litters</li>
+			<li>Fer_Liebor_Bloodlust</li>
+			<li>Fer_Liebor_Fur</li>
+			<li>Fer_Liebor_Head</li>
+			<li>Fer_Liebor_Hair</li>
+			<li>Hair_PaleGrayish</li>
+			<li>Hair_PaleBrownish</li>
+			<li>Hair_PaleBlueish</li>
+			<li>Hair_PaleBlondeish</li>
+			<li>Hair_PaleRedish</li>
+			<li>Skin_SheerWhite</li>
+			<li>Beard_NoBeardOnly</li>
+			<li>Body_Thin</li>
+			<li>AptitudeStrong_Mining</li>
+			<li>AptitudePoor_Intellectual</li>
+			<li>AptitudeTerrible_Shooting</li>
+			<li>WoundHealing_SuperFast</li>
+			<li>MeleeDamage_Strong</li>
+			<li>Superclotting</li>
+			<li>Aggression_Aggressive</li>
+			<li>Immunity_Strong</li>
+			<li>MinTemp_LargeDecrease</li>
+			<li>CaveDweller</li>
+			<li>UVSensitivity_Intense</li>
+			<li>PsychicAbility_Deaf</li>
+			<li>DarkVision</li>
+			<li>NakedSpeed</li>
+			<li>Fertile</li>
+			<li>Libido_High</li>
+			<li>RobustDigestion</li>
+			<li>StrongStomach</li>
+			<li>FireTerror</li>
+			<li>FireWeakness</li>
+		</genes>
+	</XenotypeDef>
+
+</Defs>

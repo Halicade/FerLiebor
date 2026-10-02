@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<HediffDef ParentName="ImplantHediffBase">
+		<defName>FL_Fangs</defName>
+		<label>fangs</label>
+		<labelNoun>fangs</labelNoun>
+		<description>Rows of sharp, deadly fangs.</description>
+		<descriptionHyperlinks>
+			<GeneDef>Fer_Liebor_NaturalWeapons</GeneDef>
+		</descriptionHyperlinks>
+		<countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>fangs</label>
+						<capacities>
+							<li>Bite</li>
+						</capacities>
+						<power>15</power>
+						<armorPenetration>0.25</armorPenetration>
+						<cooldownTime>2</cooldownTime>
+					</li>
+				</tools>
+			</li>
+		</comps>
+		<addedPartProps>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
+
+	<RecipeDef ParentName="SurgeryRemoveImplantBase">
+		<defName>FL_RemoveFangs</defName>
+		<label>rip out fangs</label>
+		<description>Rips out sharp fangs by the roots.</description>
+		<descriptionHyperlinks>
+			<HediffDef>FL_Fangs</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Ripping out fangs.</jobString>
+		<isViolation>true</isViolation>
+		<successfullyRemovedHediffMessage>{0} has successfully removed the fangs of {1}.</successfullyRemovedHediffMessage>
+		<removesHediff>FL_Fangs</removesHediff>
+		<surgeryIgnoreEnvironment>true</surgeryIgnoreEnvironment>
+		<skillRequirements>
+			<Medicine>2</Medicine>
+		</skillRequirements>
+	</RecipeDef>
+
+</Defs>

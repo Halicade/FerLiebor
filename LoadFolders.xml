@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<loadFolders>
+    <v1.6>
+        <li>/</li>
+        <li>1.6</li>
+        <li IfModActive="Ludeon.RimWorld.Royalty">1.6/Mods/Rewrite</li>
+        <li IfModActive="Ludeon.RimWorld.Ideology">1.6/Mods/Ideology</li>
+        <li IfModActive="Ludeon.RimWorld.Anomaly">1.6/Mods/Anomaly</li>
+        <li IfModActive="vanillaexpanded.vmemese">1.6/Mods/VEMemes</li>
+        <li IfModActive="vanillaexpanded.vanillafoodvarietyexpanded">1.6/Mods/VEFoodVariety</li>
+    </v1.6>
+</loadFolders>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThoughtDef[defName="AteFoodInappropriateForTitle"]/nullifyingGenes</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="AteFoodInappropriateForTitle"]</xpath>
+            <value>
+                <nullifyingGenes>
+                    <li>Fer_Liebor_BadEating</li>
+                </nullifyingGenes>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="AteFoodInappropriateForTitle"]/nullifyingGenes</xpath>
+            <value>
+                <li>Fer_Liebor_BadEating</li>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThoughtDef[defName="OtherTravelerLeftBehind"]/nullifyingGenes</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="OtherTravelerLeftBehind"]</xpath>
+            <value>
+                <nullifyingGenes>
+                    <li>Fer_Liebor_Savage</li>
+                </nullifyingGenes>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="OtherTravelerLeftBehind"]/nullifyingGenes</xpath>
+            <value>
+                <li>Fer_Liebor_Savage</li>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThoughtDef[defName="OtherTravelerSurgicallyViolated"]/nullifyingGenes</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="OtherTravelerSurgicallyViolated"]</xpath>
+            <value>
+                <nullifyingGenes>
+                    <li>Fer_Liebor_Bloodlust</li>
+                </nullifyingGenes>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="OtherTravelerSurgicallyViolated"]/nullifyingGenes</xpath>
+            <value>
+                <li>Fer_Liebor_Bloodlust</li>
+            </value>
+        </match>
+    </Operation>
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThoughtDef[defName="OtherTravelerArrested"]/nullifyingGenes</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="OtherTravelerArrested"]</xpath>
+            <value>
+                <nullifyingGenes>
+                    <li>Fer_Liebor_Bloodlust</li>
+                </nullifyingGenes>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="OtherTravelerArrested"]/nullifyingGenes</xpath>
+            <value>
+                <li>Fer_Liebor_Bloodlust</li>
+            </value>
+        </match>
+    </Operation>
+</Patch>

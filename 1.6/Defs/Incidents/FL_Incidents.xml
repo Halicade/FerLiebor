@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <IncidentDef>
+        <defName>FL_BurrowingRaid</defName>
+        <label>Fer'Liebor burrowing raid</label>
+
+        <workerClass>FerLiebor.FerLiebor.IncidentWorker_FerLieborRaid</workerClass>
+
+        <category>ThreatBig</category>
+
+        <targetTags>
+            <li>Map_PlayerHome</li>
+        </targetTags>
+
+        <letterLabel>death from below!</letterLabel>
+
+        <letterText>The ground beneath the colony cracks and crumbles. A pack of Fer'Liebor is trying to dig up to the surface!\n\nThese creatures are terrifyingly efficient engines of murder in close-quarters. Use fire, stay out of range, and pray.</letterText>
+
+        <letterDef>ThreatBig</letterDef>
+
+        <pointsScaleable>true</pointsScaleable>
+
+        <baseChance>0.5</baseChance>
+    </IncidentDef>
+
+    <ThingDef ParentName="MoteBase">
+        <defName>BurrowDirtSmall</defName>
+
+        <graphicData>
+            <texPath>Things/Effects/BurrowDirtSmall</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+
+        <altitudeLayer>MoteLow</altitudeLayer>
+
+        <mote>
+            <fadeInTime>5</fadeInTime>
+            <solidTime>0.1</solidTime>
+            <fadeOutTime>1</fadeOutTime>
+            <growthRate>15</growthRate>
+        </mote>
+    </ThingDef>
+
+    <ThingDef ParentName="MoteBase">
+        <defName>BurrowDirtLarge</defName>
+
+        <graphicData>
+            <texPath>Things/Effects/BurrowDirtLarge</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+
+        <altitudeLayer>MoteLow</altitudeLayer>
+
+        <mote>
+            <fadeInTime>8</fadeInTime>
+            <solidTime>0.2</solidTime>
+            <fadeOutTime>3</fadeOutTime>
+            <growthRate>20</growthRate>
+        </mote>
+    </ThingDef>
+
+    <ThingDef ParentName="MoteBase">
+        <defName>BurrowDust</defName>
+
+        <graphicData>
+            <texPath>Things/Effects/BurrowDust</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+
+        <altitudeLayer>MoteOverhead</altitudeLayer>
+
+        <mote>
+            <fadeInTime>6</fadeInTime>
+            <solidTime>0.1</solidTime>
+            <fadeOutTime>3</fadeOutTime>
+            <growthRate>15</growthRate>
+        </mote>
+    </ThingDef>
+
+</Defs>

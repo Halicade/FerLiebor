@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <PawnKindDef ParentName="BasePlayerPawnKind">
+    <defName>FL_Caveling</defName>
+    <label>caveling</label>
+    <labelPlural>cavelings</labelPlural>
+    <labelFemale>caveling doe</labelFemale>
+    <labelFemalePlural>caveling does</labelFemalePlural>
+    <race>Human</race>
+    <defaultFactionType>PlayerWarren</defaultFactionType>
+    <chemicalAddictionChance>0.0</chemicalAddictionChance>
+    <backstoryCryptosleepCommonality>0.0</backstoryCryptosleepCommonality>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>Tribal</li>
+        </categories>
+      </li>
+    </backstoryFilters>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <apparelIgnorePollution MayRequire="Ludeon.RimWorld.Biotech">true</apparelIgnorePollution>
+    <techHediffsChance>0.0</techHediffsChance>
+    <techHediffsMoney>50~50</techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+    </techHediffsTags>
+    <initialWillRange>2~4</initialWillRange>
+    <initialResistanceRange>28~44</initialResistanceRange>
+    <requiredWorkTags>
+     <li>Violent</li>
+     <li>Mining</li>
+    </requiredWorkTags>
+  </PawnKindDef>
+
+</Defs>

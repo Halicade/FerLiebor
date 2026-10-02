@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThoughtDef[defName="HeardInhumanRambling"]/nullifyingGenes</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="HeardInhumanRambling"]</xpath>
+            <value>
+                <nullifyingGenes>
+                    <li>Fer_Liebor_Savage</li>
+                </nullifyingGenes>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="HeardInhumanRambling"]/nullifyingGenes</xpath>
+            <value>
+                <li>Fer_Liebor_Savage</li>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThoughtDef[defName="AteTwistedMeat"]/nullifyingGenes</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="AteTwistedMeat"]</xpath>
+            <value>
+                <nullifyingGenes>
+                    <li>Fer_Liebor_BadEating</li>
+                </nullifyingGenes>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="AteTwistedMeat"]/nullifyingGenes</xpath>
+            <value>
+                <li>Fer_Liebor_BadEating</li>
+            </value>
+        </match>
+    </Operation>
+    
+</Patch>

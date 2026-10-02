@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/StatDef[defName="LearningRateFactor"]/parts</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/StatDef[defName="LearningRateFactor"]</xpath>
+            <value>
+                <parts />
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/StatDef[defName="LearningRateFactor"]/parts</xpath>
+        <value>
+            <li Class="FerLiebor.Statpart_LearningRate">
+                <curve>
+                    <points>
+                        <li>(0, 4)</li>
+                        <li>(7, 3)</li>
+                        <li>(13, 2)</li>
+                        <li>(18, 1.5)</li>
+                        <li>(20, 0.8)</li>
+                        <li>(30, 0.5)</li>
+                    </points>
+                </curve>
+            </li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/StatDef[defName="GlobalLearningFactor"]/parts</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/StatDef[defName="GlobalLearningFactor"]</xpath>
+            <value>
+                <parts />
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/StatDef[defName="GlobalLearningFactor"]/parts</xpath>
+        <value>
+            <li Class="FerLiebor.Statpart_LearningRate">
+                <curve>
+                    <points>
+                        <li>(0, 4)</li>
+                        <li>(7, 3)</li>
+                        <li>(13, 2)</li>
+                        <li>(18, 1.5)</li>
+                        <li>(20, 0.8)</li>
+                        <li>(30, 0.5)</li>
+                    </points>
+                </curve>
+            </li>
+        </value>
+    </Operation>
+</Patch>

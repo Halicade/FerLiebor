@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <PawnKindDef ParentName="TribalPenitentBase">
+    <defName>Feral_Fledgling</defName>
+    <label>fledgling</label>
+    <labelPlural>fledglings</labelPlural>
+    <race>Human</race>
+    <defaultFactionType>FeralWarren</defaultFactionType>
+    <combatPower>100</combatPower>
+    <chemicalAddictionChance>0.0</chemicalAddictionChance>
+    <backstoryCryptosleepCommonality>0.0</backstoryCryptosleepCommonality>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>Tribal</li>
+        </categories>
+      </li>
+    </backstoryFilters>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <apparelIgnorePollution MayRequire="Ludeon.RimWorld.Biotech">true</apparelIgnorePollution>
+    <techHediffsChance>0.0</techHediffsChance>
+    <techHediffsMoney>50~50</techHediffsMoney>
+    <weaponMoney>0</weaponMoney>
+    <weaponTags Inherit="False" />
+    <techHediffsTags>
+      <li>Poor</li>
+    </techHediffsTags>
+    <initialWillRange>5~10</initialWillRange>
+    <initialResistanceRange>30~60</initialResistanceRange>
+    <invFoodDef>Meat_Human</invFoodDef>
+    <nakedChance>1</nakedChance>
+    <maxGenerationAge>16</maxGenerationAge>
+    <skills>
+      <li>
+        <skill>Melee</skill>
+        <range>1~10</range>
+      </li>
+    </skills>
+    <requiredWorkTags>
+     <li>Violent</li>
+     <li>Mining</li>
+    </requiredWorkTags>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="TribalWarriorBase">
+    <defName>Feral_Hunter</defName>
+    <label>hunter</label>
+    <labelPlural>hunters</labelPlural>
+    <race>Human</race>
+    <defaultFactionType>FeralWarren</defaultFactionType>
+    <combatPower>120</combatPower>
+    <chemicalAddictionChance>0.0</chemicalAddictionChance>
+    <backstoryCryptosleepCommonality>0.0</backstoryCryptosleepCommonality>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>Tribal</li>
+        </categories>
+      </li>
+    </backstoryFilters>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <apparelIgnorePollution MayRequire="Ludeon.RimWorld.Biotech">true</apparelIgnorePollution>
+    <techHediffsChance>0.0</techHediffsChance>
+    <techHediffsMoney>50~50</techHediffsMoney>
+    <weaponMoney>0</weaponMoney>
+    <weaponTags Inherit="False" />
+    <techHediffsTags>
+      <li>Poor</li>
+    </techHediffsTags>
+    <initialWillRange>15~25</initialWillRange>
+    <initialResistanceRange>40~70</initialResistanceRange>
+    <invFoodDef>Meat_Human</invFoodDef>
+    <nakedChance>1</nakedChance>
+    <maxGenerationAge>20</maxGenerationAge>
+    <skills>
+      <li>
+        <skill>Melee</skill>
+        <range>5~15</range>
+      </li>
+    </skills>
+    <requiredWorkTags>
+     <li>Violent</li>
+     <li>Mining</li>
+    </requiredWorkTags>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="TribalWarriorBase">
+    <defName>Feral_Digger</defName>
+    <label>digger</label>
+    <labelPlural>diggers</labelPlural>
+    <race>Human</race>
+    <defaultFactionType>FeralWarren</defaultFactionType>
+    <combatPower>120</combatPower>
+    <chemicalAddictionChance>0.0</chemicalAddictionChance>
+    <backstoryCryptosleepCommonality>0.0</backstoryCryptosleepCommonality>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>Tribal</li>
+        </categories>
+      </li>
+    </backstoryFilters>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <apparelIgnorePollution MayRequire="Ludeon.RimWorld.Biotech">true</apparelIgnorePollution>
+    <techHediffsChance>0.0</techHediffsChance>
+    <techHediffsMoney>50~50</techHediffsMoney>
+    <weaponMoney>0</weaponMoney>
+    <weaponTags Inherit="False" />
+    <techHediffsTags>
+      <li>Poor</li>
+    </techHediffsTags>
+    <initialWillRange>15~25</initialWillRange>
+    <initialResistanceRange>40~70</initialResistanceRange>
+    <invFoodDef>Meat_Human</invFoodDef>
+    <nakedChance>1</nakedChance>
+    <maxGenerationAge>20</maxGenerationAge>
+    <canBeSapper>true</canBeSapper>
+    <isGoodBreacher>true</isGoodBreacher>
+    <skills>
+      <li>
+        <skill>Melee</skill>
+        <range>5~10</range>
+      </li>
+    </skills>
+    <requiredWorkTags>
+     <li>Violent</li>
+     <li>Mining</li>
+    </requiredWorkTags>
+  </PawnKindDef>
+
+<PawnKindDef ParentName="TribalBase">
+    <defName>Feral_Protector</defName>
+    <label>protector</label>
+    <labelPlural>protectors</labelPlural>
+    <race>Human</race>
+    <defaultFactionType>FeralWarren</defaultFactionType>
+    <combatPower>150</combatPower>
+    <chemicalAddictionChance>0.0</chemicalAddictionChance>
+    <backstoryCryptosleepCommonality>0.0</backstoryCryptosleepCommonality>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>Tribal</li>
+        </categories>
+      </li>
+    </backstoryFilters>
+    <forcedTraits>
+      <li>Brawler</li>
+      <li>Tough</li>
+    </forcedTraits>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <apparelIgnorePollution MayRequire="Ludeon.RimWorld.Biotech">true</apparelIgnorePollution>
+    <techHediffsChance>0.0</techHediffsChance>
+    <techHediffsMoney>50~50</techHediffsMoney>
+    <weaponMoney>0</weaponMoney>
+    <weaponTags Inherit="False" />
+    <techHediffsTags>
+      <li>Poor</li>
+    </techHediffsTags>
+    <initialWillRange>55~75</initialWillRange>
+    <initialResistanceRange>60~90</initialResistanceRange>
+    <invFoodDef>Meat_Human</invFoodDef>
+    <nakedChance>1</nakedChance>
+    <maxGenerationAge>30</maxGenerationAge>
+    <skills>
+      <li>
+        <skill>Melee</skill>
+        <range>10~20</range>
+      </li>
+    </skills>
+    <requiredWorkTags>
+     <li>Violent</li>
+     <li>Mining</li>
+    </requiredWorkTags>
+  </PawnKindDef>
+
+<PawnKindDef ParentName="TribalChiefBase">
+    <defName>Feral_Matriarch</defName>
+    <label>matriarch</label>
+    <labelPlural>matriarchs</labelPlural>
+    <race>Human</race>
+    <defaultFactionType>FeralWarren</defaultFactionType>
+    <combatPower>250</combatPower>
+    <chemicalAddictionChance>0.0</chemicalAddictionChance>
+    <backstoryCryptosleepCommonality>0.0</backstoryCryptosleepCommonality>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>Tribal</li>
+        </categories>
+      </li>
+    </backstoryFilters>
+    <forcedTraits>
+      <li>Nimble</li>
+      <li>Brawler</li>
+      <li>Tough</li>
+    </forcedTraits>
+    <fixedGender>
+      <li>Female</li>
+    </fixedGender>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <apparelIgnorePollution MayRequire="Ludeon.RimWorld.Biotech">true</apparelIgnorePollution>
+    <techHediffsChance>0.0</techHediffsChance>
+    <techHediffsMoney>50~50</techHediffsMoney>
+    <weaponMoney>0</weaponMoney>
+    <weaponTags Inherit="False" />
+    <techHediffsTags>
+      <li>Poor</li>
+    </techHediffsTags>
+    <initialWillRange>90~100</initialWillRange>
+    <initialResistanceRange>90~100</initialResistanceRange>
+    <invFoodDef>Meat_Human</invFoodDef>
+    <nakedChance>1</nakedChance>
+    <minGenerationAge>25</minGenerationAge>
+    <maxGenerationAge>35</maxGenerationAge>
+    <immuneToTraps>true</immuneToTraps>
+    <ignoresPainShock>true</ignoresPainShock>
+    <isBoss>True</isBoss>
+    <skills>
+      <li>
+        <skill>Melee</skill>
+        <range>15~20</range>
+      </li>
+    </skills>
+    <requiredWorkTags>
+     <li>Violent</li>
+     <li>Mining</li>
+    </requiredWorkTags>
+  </PawnKindDef>
+
+<PawnKindDef ParentName="TraderBase">
+    <defName>Feral_Trader</defName>
+    <label>trader</label>
+    <labelPlural>traders</labelPlural>
+    <race>Human</race>
+    <defaultFactionType>FeralWarren</defaultFactionType>
+    <combatPower>100</combatPower>
+    <chemicalAddictionChance>0.0</chemicalAddictionChance>
+    <backstoryCryptosleepCommonality>0.0</backstoryCryptosleepCommonality>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>Tribal</li>
+        </categories>
+      </li>
+    </backstoryFilters>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <apparelIgnorePollution MayRequire="Ludeon.RimWorld.Biotech">true</apparelIgnorePollution>
+    <techHediffsChance>0.0</techHediffsChance>
+    <techHediffsMoney>50~50</techHediffsMoney>
+    <weaponMoney>0</weaponMoney>
+    <weaponTags Inherit="False" />
+    <techHediffsTags>
+      <li>Poor</li>
+    </techHediffsTags>
+    <initialWillRange>30~50</initialWillRange>
+    <initialResistanceRange>40~70</initialResistanceRange>
+    <nakedChance>1</nakedChance>
+    <maxGenerationAge>25</maxGenerationAge>
+    <skills>
+      <li>
+        <skill>Melee</skill>
+        <range>1~10</range>
+      </li>
+    </skills>
+    <requiredWorkTags>
+     <li>Violent</li>
+     <li>Mining</li>
+     <li>Social</li>
+    </requiredWorkTags>
+  </PawnKindDef>
+
+</Defs>

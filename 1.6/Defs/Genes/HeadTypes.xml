@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <HeadTypeDef Name="Fer_Liebor_Head" ParentName="AverageBase" Abstract="True">
+		<randomChosen>false</randomChosen>
+		<gender>None</gender>
+		<requiredGenes>
+			<li>Fer_Liebor_Head</li>
+		</requiredGenes>
+	</HeadTypeDef>
+
+	<HeadTypeDef ParentName="Fer_Liebor_Head">
+		<defName>FreBunHead1Normal</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/FreBunHead1Normal</graphicPath>
+		<eyeOffsetEastWest>(-0.08, 0, 0.18)</eyeOffsetEastWest>
+	</HeadTypeDef>
+	<HeadTypeDef ParentName="Fer_Liebor_Head">
+		<defName>FreBunHead1Pretty</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/FreBunHead1Pretty</graphicPath>
+		<eyeOffsetEastWest>(-0.08, 0, 0.18)</eyeOffsetEastWest>
+	</HeadTypeDef>
+	<HeadTypeDef ParentName="Fer_Liebor_Head">
+		<defName>FreBunHead1Stern</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/FreBunHead1Stern</graphicPath>
+		<eyeOffsetEastWest>(-0.08, 0, 0.18)</eyeOffsetEastWest>
+	</HeadTypeDef>
+	<HeadTypeDef ParentName="Fer_Liebor_Head">
+		<defName>FreBunHead1Wide</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/FreBunHead1Wide</graphicPath>
+		<eyeOffsetEastWest>(-0.08, 0, 0.18)</eyeOffsetEastWest>
+	</HeadTypeDef>
+
+
+  <HeadTypeDef ParentName="Fer_Liebor_Head">
+		<defName>FreBunHead2Normal</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/FreBunHead2Normal</graphicPath>
+		<eyeOffsetEastWest>(-0.08, 0, 0.18)</eyeOffsetEastWest>
+	</HeadTypeDef>
+	<HeadTypeDef ParentName="Fer_Liebor_Head">
+		<defName>FreBunHead2Pretty</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/FreBunHead2Pretty</graphicPath>
+		<eyeOffsetEastWest>(-0.08, 0, 0.18)</eyeOffsetEastWest>
+	</HeadTypeDef>
+	<HeadTypeDef ParentName="Fer_Liebor_Head">
+		<defName>FreBunHead2Stern</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/FreBunHead2Stern</graphicPath>
+		<eyeOffsetEastWest>(-0.08, 0, 0.18)</eyeOffsetEastWest>
+	</HeadTypeDef>
+	<HeadTypeDef ParentName="Fer_Liebor_Head">
+		<defName>FreBunHead2Wide</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/FreBunHead2Wide</graphicPath>
+		<eyeOffsetEastWest>(-0.08, 0, 0.18)</eyeOffsetEastWest>
+	</HeadTypeDef>
+
+
+  <HeadTypeDef ParentName="Fer_Liebor_Head">
+		<defName>FreBunHead3Normal</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/FreBunHead3Normal</graphicPath>
+		<eyeOffsetEastWest>(-0.08, 0, 0.18)</eyeOffsetEastWest>
+	</HeadTypeDef>
+	<HeadTypeDef ParentName="Fer_Liebor_Head">
+		<defName>FreBunHead3Pretty</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/FreBunHead3Pretty</graphicPath>
+		<eyeOffsetEastWest>(-0.08, 0, 0.18)</eyeOffsetEastWest>
+	</HeadTypeDef>
+	<HeadTypeDef ParentName="Fer_Liebor_Head">
+		<defName>FreBunHead3Stern</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/FreBunHead3Stern</graphicPath>
+		<eyeOffsetEastWest>(-0.08, 0, 0.18)</eyeOffsetEastWest>
+	</HeadTypeDef>
+	<HeadTypeDef ParentName="Fer_Liebor_Head">
+		<defName>FreBunHead3Wide</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/FreBunHead3Wide</graphicPath>
+		<eyeOffsetEastWest>(-0.08, 0, 0.18)</eyeOffsetEastWest>
+	</HeadTypeDef>
+
+ </Defs>

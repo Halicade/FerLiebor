@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+  <GeneCategoryDef>
+    <defName>Fer_Liebor_Genes</defName>
+    <label>Fer'Liebor Genetics</label>
+    <displayPriorityInXenotype>248</displayPriorityInXenotype>
+    <displayPriorityInGenepack>-109</displayPriorityInGenepack>
+  </GeneCategoryDef>
+</Defs>

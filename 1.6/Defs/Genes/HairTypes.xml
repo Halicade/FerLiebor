@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+<StyleItemCategoryDef>
+    <defName>Fer_Liebor_Hair</defName>
+    <label>caveling hair</label>
+  </StyleItemCategoryDef>
+
+  <HairDef Name="BunHairBase" Abstract="True">
+    <category>Fer_Liebor_Hair</category>
+    <requiredGene>Fer_Liebor_Hair</requiredGene>
+    <styleTags>
+      <li>Fer'Liebor</li>
+    </styleTags>
+  </HairDef>
+
+  <HairDef ParentName="BunHairBase">
+    <defName>BunHairDroopLeft</defName>
+    <label>left droop</label>
+    <styleGender>Any</styleGender>
+    <texPath>Things/Pawn/Humanlike/Hairs/droopleft</texPath>
+  </HairDef>
+
+  <HairDef ParentName="BunHairBase">
+    <defName>BunHairDroopRight</defName>
+    <label>right droop</label>
+    <styleGender>Any</styleGender>
+    <texPath>Things/Pawn/Humanlike/Hairs/droopright</texPath>
+  </HairDef>
+
+  <HairDef ParentName="BunHairBase">
+    <defName>BunHairHiding</defName>
+    <label>overgrown</label>
+    <styleGender>Any</styleGender>
+    <texPath>Things/Pawn/Humanlike/Hairs/hiding</texPath>
+  </HairDef>
+
+  <HairDef ParentName="BunHairBase">
+    <defName>BunHairSweet</defName>
+    <label>sweet</label>
+    <styleGender>Any</styleGender>
+    <texPath>Things/Pawn/Humanlike/Hairs/sweet</texPath>
+  </HairDef>
+
+  <HairDef ParentName="BunHairBase">
+    <defName>BunHairScruffy</defName>
+    <label>scuffy</label>
+    <styleGender>Any</styleGender>
+    <texPath>Things/Pawn/Humanlike/Hairs/scruffy</texPath>
+  </HairDef>
+
+</Defs>
