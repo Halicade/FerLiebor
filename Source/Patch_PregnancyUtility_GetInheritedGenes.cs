@@ -13,7 +13,7 @@ public static class Patch_PregnancyUtility_GetInheritedGenes
 {
 	private static MethodBase TargetMethod()
 	{
-		return typeof(PregnancyUtility).GetMethod("GetInheritedGenes", BindingFlags.Static | BindingFlags.Public, null, new Type[3]
+		return typeof(PregnancyUtility).GetMethod(nameof(PregnancyUtility.GetInheritedGenes), BindingFlags.Static | BindingFlags.Public, null, new Type[3]
 		{
 			typeof(Pawn),
 			typeof(Pawn),

@@ -5,7 +5,7 @@
         <defName>FL_BurrowingRaid</defName>
         <label>Fer'Liebor burrowing raid</label>
 
-        <workerClass>FerLiebor.FerLiebor.IncidentWorker_FerLieborRaid</workerClass>
+        <workerClass>FerLiebor.IncidentWorker_FerLieborRaid</workerClass>
 
         <category>ThreatBig</category>
 

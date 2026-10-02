@@ -14,6 +14,14 @@ public static class FL_GeneDefOf
 
 	public static GeneDef Fer_Liebor_Litters;
 
+	public static FactionDef FeralWarren;
+
+	public static ThingDef BurrowDirtSmall;
+	
+	public static ThingDef BurrowDirtLarge;
+	
+	public static ThingDef BurrowDust;
+
 	static FL_GeneDefOf()
 	{
 		DefOfHelper.EnsureInitializedInCtor(typeof(FL_GeneDefOf));
