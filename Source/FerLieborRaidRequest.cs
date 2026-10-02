@@ -38,7 +38,7 @@ public class FerLieborRaidRequest : IExposable
         Scribe_Collections.Look(ref emergencePoints, "emergencePoints", LookMode.Value);
         if (Scribe.mode == LoadSaveMode.PostLoadInit && emergencePoints == null)
         {
-            emergencePoints = new List<IntVec3>();
+            emergencePoints = [];
         }
     }
 }

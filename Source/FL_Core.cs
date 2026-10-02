@@ -1,6 +1,7 @@
 using HarmonyLib;
 using Verse;
 
+namespace FerLiebor;
 
 public class FL_Core : Mod
 {

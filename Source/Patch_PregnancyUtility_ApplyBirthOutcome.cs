@@ -4,7 +4,7 @@ using Verse;
 
 namespace FerLiebor;
 
-[HarmonyPatch(typeof(PregnancyUtility), "ApplyBirthOutcome")]
+[HarmonyPatch(typeof(PregnancyUtility), nameof(PregnancyUtility.ApplyBirthOutcome))]
 public static class Patch_PregnancyUtility_ApplyBirthOutcome
 {
 	private static void Postfix(Thing __result, Pawn geneticMother, Pawn father)

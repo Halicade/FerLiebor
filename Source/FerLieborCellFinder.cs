@@ -25,23 +25,19 @@ public static class FerLieborCellFinder
 
     private static bool TryFindCellInHomeArea(out IntVec3 cell, Map map) {
         cell = IntVec3.Invalid;
-        if (map == null || map.areaManager == null) {
-            return false;
-        }
-        Area_Home home = map.areaManager.Home;
+        Area_Home home = map?.areaManager?.Home;
         if (home == null) {
             return false;
         }
-        List<IntVec3> list = new List<IntVec3>();
+        List<IntVec3> list = [];
         for (int i = 0; i < map.Size.z; i++) {
             for (int j = 0; j < map.Size.x; j++) {
                 IntVec3 intVec = new IntVec3(j, 0, i);
-                try {
-                    if (home[intVec] && IsValidEmergenceCell(intVec, map)) {
-                        list.Add(intVec);
-                    }
+
+                if (home[intVec] && IsValidEmergenceCell(intVec, map)) {
+                    list.Add(intVec);
                 }
-                catch { }
+
             }
         }
         if (list.Count > 0) {
@@ -124,7 +120,7 @@ public static class FerLieborCellFinder
         if (c.GetFirstThing(map, ThingDefOf.Hive) != null) {
             return false;
         }
-        if (c.GetFirstThing(map, ThingDef.Named("TunnelHiveSpawner")) != null) {
+        if (c.GetFirstThing(map, ThingDefOf.TunnelHiveSpawner) != null) {
             return false;
         }
         List<Thing> thingList = c.GetThingList(map);
@@ -138,9 +134,6 @@ public static class FerLieborCellFinder
             }
         }
         float temperature = c.GetTemperature(map);
-        if (temperature < -40f) {
-            return false;
-        }
-        return true;
+        return temperature >= -40f;
     }
 }

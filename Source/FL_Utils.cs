@@ -2,7 +2,8 @@ using RimWorld;
 using Verse;
 
 namespace FerLiebor;
-
+/*
+ unused
 internal static class FL_Utils
 {
 	internal static void GestationProgress(ref Hediff_Pregnant hediff, float old_serverity)
@@ -12,3 +13,4 @@ internal static class FL_Utils
 		hediff.Severity += num;
 	}
 }
+*/

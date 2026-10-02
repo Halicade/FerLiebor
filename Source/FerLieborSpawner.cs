@@ -25,7 +25,7 @@ public class FerLieborSpawner
             return;
         }
         if (points <= 0f) {
-            points = ((groupCount > 0) ? ((float)groupCount * 120f) : 200f);
+            points = groupCount > 0 ? groupCount * 120f : 200f;
         }
         PawnGroupMakerParms parms = new PawnGroupMakerParms
         {
@@ -79,7 +79,7 @@ public class FerLieborSpawner
         while (list2.Count < desiredCount && list.Count > 0) {
             IntVec3 chosen = list.RandomElement();
             list2.Add(chosen);
-            list.RemoveAll((IntVec3 c) => c.DistanceTo(chosen) < 8f);
+            list.RemoveAll(c => c.DistanceTo(chosen) < 8f);
         }
         return list2;
     }

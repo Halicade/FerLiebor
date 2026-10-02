@@ -1,6 +1,7 @@
-using FerLiebor;
 using RimWorld;
 using Verse;
+
+namespace FerLiebor;
 
 [StaticConstructorOnStartup]
 internal static class FL_Common
