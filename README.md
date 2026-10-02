@@ -1,5 +1,7 @@
 Code changes/improvements
 
+-Threw everything into loadfolders
+
 -Switched everything that wasn't using DefOfs to DefOfs
 
 -Removed patch on statworker.getValueUnfinalized. Replaced with statparts patched onto learning rate and learning factor
