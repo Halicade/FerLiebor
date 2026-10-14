@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<GeneDef ParentName="GeneEarsBase">
+		<defName>Fer_Liebor_Ear</defName>
+		<label>Lagomorphic Ears</label>
+		<description>Carriers of this gene have long, fluffy ears reminiscent of Terran rabbits.</description>
+		<iconPath>UI/BunEar</iconPath>
+		<exclusionTags>
+			<li>Ears</li>
+		</exclusionTags>
+		<displayCategory>Fer_Liebor_Genes</displayCategory>
+		<displayOrderInCategory>9000</displayOrderInCategory>
+   <statOffsets>
+			<HuntingStealth>0.30</HuntingStealth>
+      <TrapSpringChance>-0.3</TrapSpringChance>
+		</statOffsets>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPaths>
+					<li>Things/Pawn/Parts/FreBunEar1</li>
+					<li>Things/Pawn/Parts/FreBunEar2</li>
+					<li>Things/Pawn/Parts/FreBunEar3</li>
+					<li>Things/Pawn/Parts/FreBunEar4</li>
+					<li>Things/Pawn/Parts/FreBunEar5</li>
+				</texPaths>
+				<narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
+				<colorType>Hair</colorType>
+				<parentTagDef>Head</parentTagDef>
+				<useRottenColor>true</useRottenColor>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<drawData>
+					<defaultData>
+						<layer>70</layer>
+					</defaultData>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+		<capMods>
+			<li>
+				<capacity>Hearing</capacity>
+				<postFactor>1.05</postFactor>
+			</li>
+		</capMods>
+		<symbolPack>
+			<prefixSymbols>
+        <li><symbol>bun</symbol></li>
+        <li><symbol>rabbit</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+        <li><symbol>ear</symbol></li>
+        <li><symbol>thumper</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+	
+	<GeneDef ParentName="GeneTailBase">
+		<defName>Fer_Liebor_Tail</defName>
+		<label>Tufted Tail</label>
+		<description>Carriers of this gene grow a huge, fluffy tail, starting at the middle of their spine and forcing their natural stance to lean forwards slightly to balance out its weight.</description>
+		<iconPath>UI/BunTail</iconPath>
+		<displayCategory>Fer_Liebor_Genes</displayCategory>
+		<displayOrderInCategory>9000</displayOrderInCategory>
+		<statOffsets>
+			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
+		</statOffsets>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPath>Things/Pawn/Parts/FreBunTail</texPath>
+				<narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
+				<colorType>Hair</colorType>
+				<parentTagDef>Body</parentTagDef>
+				<useRottenColor>true</useRottenColor>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<drawData>
+					<scaleOffsetByBodySize>true</scaleOffsetByBodySize>
+					<defaultData>
+						<layer>-2</layer>
+					</defaultData>
+					<dataNorth>
+						<offset>(-0.25, 0, -0.35)</offset>
+						<layer>90</layer>
+					</dataNorth>
+					<dataSouth>
+						<offset>(0.25, 0, 0.15)</offset>
+					</dataSouth>
+					<dataEast>
+						<offset>(-1, -0.5, -0.25)</offset>
+					</dataEast>
+					<dataWest>
+						<offset>(1, -0.5, -0.25)</offset>
+					</dataWest>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+		<biostatCpx>0</biostatCpx>
+		<biostatMet>-1</biostatMet>
+	</GeneDef>
+	
+	<GeneDef>
+		<defName>Fer_Liebor_NaturalWeapons</defName>
+		<label>natural weapons</label>
+		<labelShortAdj>sharpened</labelShortAdj>
+		<description>Carriers of this gene grow vicious, sharpened claws on their digits and serrated fangs on their maws, giving their unarmed strikes sharp cutting and biting damage. These natural weapons are unwieldy for fine motor skills, worsening their manipulation.</description>
+		<iconPath>UI/BunClaws</iconPath>
+		<displayCategory>Fer_Liebor_Genes</displayCategory>
+		<displayOrderInCategory>30</displayOrderInCategory>
+		<customEffectDescriptions>
+			<li>Unarmed strikes deal slashing and piercing damage.</li>
+		</customEffectDescriptions>
+		<capMods>
+			<li>
+				<capacity>Manipulation</capacity>
+				<postFactor>0.90</postFactor>
+			</li>
+		</capMods>
+		<modExtensions>
+			<li Class="VEF.Genes.GeneExtension">
+				<hediffsToBodyParts>
+					<li>
+						<hediff>FL_Claws</hediff>
+						<bodyparts>
+							<li>Hand</li>
+							<li>Hand</li>
+						</bodyparts>
+					</li>
+					<li>
+						<hediff>FL_Fangs</hediff>
+						<bodyparts>
+							<li>Jaw</li>
+						</bodyparts>
+					</li>
+				</hediffsToBodyParts>
+			</li>
+		</modExtensions>
+		<biostatCpx>0</biostatCpx>
+		<biostatMet>-2</biostatMet>
+	</GeneDef>
+	
+	<GeneDef>
+		<defName>Fer_Liebor_Fur</defName>
+		<label>caveling body</label>
+		<description>Carriers of this gene have a hunched-over, digitigrade body, covered in thick, coarse fur.</description>
+		<biostatCpx>0</biostatCpx>
+		<biostatMet>-2</biostatMet>
+		<displayCategory>Fer_Liebor_Genes</displayCategory>
+		<displayOrderInCategory>410</displayOrderInCategory>
+		<statOffsets>
+			<ComfyTemperatureMin>-15</ComfyTemperatureMin>
+		</statOffsets>
+		<iconPath>UI/BunFur</iconPath>
+		<statFactors>
+			<MoveSpeed>1.5</MoveSpeed>
+			<Mass>0.75</Mass>
+			<MeatAmount>0.75</MeatAmount>
+			<LeatherAmount>0.75</LeatherAmount>
+			<VEF_CosmeticBodySize_Multiplier>0.75</VEF_CosmeticBodySize_Multiplier>
+			<MiningSpeed>1.3</MiningSpeed>
+			<SmoothingSpeed>1.3</SmoothingSpeed>
+		</statFactors>
+		<exclusionTags>
+			<li>Fur</li>
+		</exclusionTags>
+		<fur>Fer_Liebor_Fur</fur>
+		<skinIsHairColor>true</skinIsHairColor>
+		<tattoosVisible>false</tattoosVisible>
+		<renderNodeProperties>
+			<li>
+				<debugLabel>Fur</debugLabel>
+				<nodeClass>PawnRenderNode_Fur</nodeClass>
+				<workerClass>PawnRenderNodeWorker_Fur</workerClass>
+				<baseLayer>5</baseLayer>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<colorType>Hair</colorType>
+				<parentTagDef>Body</parentTagDef>
+			</li>
+		</renderNodeProperties>
+	</GeneDef>
+	
+	<GeneDef>
+		<defName>Fer_Liebor_Head</defName>
+		<label>fer'liebor head</label>
+		<labelShortAdj>rabbit-snouted</labelShortAdj>
+		<description>Carriers of this gene have an odd, teardrop-shaped head with a diminutive lapine snout.</description>
+		<biostatCpx>0</biostatCpx>
+		<displayCategory>Fer_Liebor_Genes</displayCategory>
+		<displayOrderInCategory>410</displayOrderInCategory>
+		<iconPath>UI/BunHead</iconPath>
+		<exclusionTags>
+			<li>Head</li>
+			<li>HeadType</li>
+		</exclusionTags>
+		<forcedHeadTypes>
+			<li>FreBunHead1Normal</li>
+			<li>FreBunHead1Pretty</li>
+			<li>FreBunHead1Stern</li>
+			<li>FreBunHead1Wide</li>
+			<li>FreBunHead2Normal</li>
+			<li>FreBunHead2Pretty</li>
+			<li>FreBunHead2Stern</li>
+			<li>FreBunHead2Wide</li>
+			<li>FreBunHead3Normal</li>
+			<li>FreBunHead3Pretty</li>
+			<li>FreBunHead3Stern</li>
+			<li>FreBunHead3Wide</li>
+		</forcedHeadTypes>
+	</GeneDef>
+	
+	<GeneDef>
+		<defName>Fer_Liebor_Eyes</defName>
+		<label>fer'liebor eyes</label>
+		<labelShortAdj>pale-eyed</labelShortAdj>
+		<description>Carriers of this gene have wide, pale, colourless eyes, adapted for survival in low-light, cramped environments. This makes them extremely nearsighted.</description>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>2</biostatMet>
+		<displayCategory>Fer_Liebor_Genes</displayCategory>
+		<displayOrderInCategory>410</displayOrderInCategory>
+		<iconPath>UI/BunEyes</iconPath>
+		<statFactors>
+			<ShootingAccuracyFactor_Long>0.15</ShootingAccuracyFactor_Long>
+			<ShootingAccuracyFactor_Medium>0.35</ShootingAccuracyFactor_Medium>
+			<ShootingAccuracyFactor_Short>0.75</ShootingAccuracyFactor_Short>
+		</statFactors>
+	</GeneDef>
+	
+	<GeneDef ParentName="GeneHairStyleBase">
+		<defName>Fer_Liebor_Hair</defName>
+		<label>thin-haired</label>
+		<description>Carriers of this gene have thin, loose, stringy hair that often hides their face somewhat.</description>
+		<iconPath>UI/BunHair</iconPath>
+		<displayOrderInCategory>57</displayOrderInCategory>
+		<hairTagFilter>
+			<whitelist>true</whitelist>
+			<tags>
+				<li>Fer'Liebor</li>
+			</tags>
+		</hairTagFilter>
+	</GeneDef>
+	
+	<!-- I didn't manage to get this to work :( it was supposed to be a process to randomly assign a hair colour to lessen genetic clutter,
+	but it ended up breaking stuff. I still did it the normal way though
+	  <GeneDef>
+		<defName>FerLiebor_HairColors</defName>
+		<label>caveling hair colors</label>
+		<labelShortAdj>caveling hair</labelShortAdj>
+		<description>Carriers of this gene have a natural lack of pigmentation to their hair and skin, leading to very pale and washed-out colours.</description>
+		<geneClass>FerLiebor.Gene_Random</geneClass>
+		<iconPath>UI/CaveColors</iconPath>
+		<displayOrderInCategory>65</displayOrderInCategory>
+		<modExtensions>
+				<li Class="FerLiebor.RandomGeneExtension">
+					<genes>
+			  <li>Hair_PaleGrayish</li>
+			  <li>Hair_PaleBrownish</li>
+			  <li>Hair_PaleBlueish</li>
+			  <li>Hair_PaleBlondeish</li>
+			  <li>Hair_PaleRedish</li>
+			</genes>
+				</li>
+			</modExtensions>
+	  </GeneDef>-->
+	
+	
+	<GeneDef ParentName="GeneHairColorBase">
+		<defName>Hair_PaleGrayish</defName>
+		<label>caveling white hair</label>
+		<description>Carriers of this gene exhibit a natural lack of pigmentation to their hair, leading it to take on a very pale off-gray colour.</description>
+		<hairColorOverride>(239, 227, 239)</hairColorOverride>
+		<selectionWeight>0.05</selectionWeight>
+		<displayOrderInCategory>130</displayOrderInCategory>
+		<randomBrightnessFactor>0</randomBrightnessFactor>
+	</GeneDef>
+	
+	<GeneDef ParentName="GeneHairColorBase">
+		<defName>Hair_PaleBrownish</defName>
+		<label>caveling dusty hair</label>
+		<description>Carriers of this gene exhibit a natural lack of pigmentation to their hair, leading it to take on a very pale dusty-brown colour.</description>
+		<hairColorOverride>(206, 187, 200)</hairColorOverride>
+		<selectionWeight>0.05</selectionWeight>
+		<displayOrderInCategory>130</displayOrderInCategory>
+		<randomBrightnessFactor>0</randomBrightnessFactor>
+	</GeneDef>
+	
+	<GeneDef ParentName="GeneHairColorBase">
+		<defName>Hair_PaleBlueish</defName>
+		<label>caveling gray hair</label>
+		<description>Carriers of this gene exhibit a natural lack of pigmentation to their hair, leading it to take on a very pale blue-gray colour.</description>
+		<hairColorOverride>(207, 206, 224)</hairColorOverride>
+		<selectionWeight>0.05</selectionWeight>
+		<displayOrderInCategory>130</displayOrderInCategory>
+		<randomBrightnessFactor>0</randomBrightnessFactor>
+	</GeneDef>
+	
+	<GeneDef ParentName="GeneHairColorBase">
+		<defName>Hair_PaleBlondeish</defName>
+		<label>caveling cream hair</label>
+		<description>Carriers of this gene exhibit a natural lack of pigmentation to their hair, leading it to take on a very pale blonde colour.</description>
+		<hairColorOverride>(233, 213, 216)</hairColorOverride>
+		<selectionWeight>0.05</selectionWeight>
+		<displayOrderInCategory>130</displayOrderInCategory>
+		<randomBrightnessFactor>0</randomBrightnessFactor>
+	</GeneDef>
+	
+	<GeneDef ParentName="GeneHairColorBase">
+		<defName>Hair_PaleRedish</defName>
+		<label>caveling dusky hair</label>
+		<description>Carriers of this gene exhibit a natural lack of pigmentation to their hair, leading it to take on a very pale dusky ginger colour.</description>
+		<hairColorOverride>(223, 193, 204)</hairColorOverride>
+		<selectionWeight>0.05</selectionWeight>
+		<displayOrderInCategory>130</displayOrderInCategory>
+		<randomBrightnessFactor>0</randomBrightnessFactor>
+	</GeneDef>
+	
+	
+	<GeneDef>
+		<defName>Fer_Liebor_Mayflies</defName>
+		<label>Short Lifespan</label>
+		<labelShortAdj>short-lived</labelShortAdj>
+		<description>Carriers of this gene seem to reach old age and die of natural causes at a much earlier age than baseliners.</description>
+		<iconPath>UI/BunMayflies</iconPath>
+		<displayCategory>Fer_Liebor_Genes</displayCategory>
+		<displayOrderInCategory>30</displayOrderInCategory>
+		<marketValueFactor>-5.5</marketValueFactor>
+		<statFactors>
+			<LifespanFactor>0.4</LifespanFactor>
+			<CancerRate>1.5</CancerRate>
+		</statFactors>
+		<biostatCpx>0</biostatCpx>
+		<biostatMet>2</biostatMet>
+	</GeneDef>
+	
+	<GeneDef>
+		<defName>Fer_Liebor_GrowsQuickly</defName>
+		<label>Grows Quickly</label>
+		<description>Carriers of this gene will age at a much faster rate than baseliners. They age faster the younger they are.</description>
+		<iconPath>UI/BunAge</iconPath>
+		<exclusionTags>
+			<li>AG_Aging</li>
+			<li>Aging</li>
+			<li>Age</li>
+		</exclusionTags>
+		<displayCategory>Fer_Liebor_Genes</displayCategory>
+		<displayOrderInCategory>52</displayOrderInCategory>
+		<biostatCpx>0</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<statFactors>
+			<LearningRateFactor>1.5</LearningRateFactor>
+		</statFactors>
+		<biologicalAgeTickFactorFromAgeCurve>
+			<points>
+				<li>(0, 7.0)</li>
+				<li>(7, 5.0)</li>
+				<li>(13, 4.0)</li>
+				<li>(18, 2)</li>
+			</points>
+		</biologicalAgeTickFactorFromAgeCurve>
+		<selectionWeight>0</selectionWeight>
+	</GeneDef>
+	
+	
+	<GeneDef>
+		<defName>Fer_Liebor_Nimble</defName>
+		<label>Nimble</label>
+		<description>Carriers of this gene have inhumanly lithe, flexible bodies and sharp reflexes, making landing a direct hit on them difficult in close quarters.</description>
+		<iconPath>UI/BunDodger</iconPath>
+		<displayCategory>Fer_Liebor_Genes</displayCategory>
+		<displayOrderInCategory>100</displayOrderInCategory>
+		<statOffsets>
+			<MeleeDodgeChance>4</MeleeDodgeChance>
+		</statOffsets>
+		<biostatCpx>0</biostatCpx>
+		<biostatMet>-2</biostatMet>
+	</GeneDef>
+	
+	<GeneDef>
+		<defName>Fer_Liebor_Savage</defName>
+		<label>Savage</label>
+		<description>Carriers of this gene are uncivilized and brutish, and will never mind living in the most animalistic conditions. This makes them extremely unpleasant in the eyes of most civilized beings.</description>
+		<iconPath>UI/BunSavage</iconPath>
+		<displayCategory>Fer_Liebor_Genes</displayCategory>
+		<displayOrderInCategory>100</displayOrderInCategory>
+		<marketValueFactor>-1.5</marketValueFactor>
+		<disablesNeeds>
+			<li>Beauty</li>
+			<li>Comfort</li>
+		</disablesNeeds>
+		<biostatCpx>0</biostatCpx>
+		<biostatMet>2</biostatMet>
+	</GeneDef>
+	
+	
+	<ThoughtDef>
+		<defName>Fer_Liebor_Savage_Thought</defName>
+		<thoughtClass>Thought_SituationalSocial</thoughtClass>
+		<workerClass>FerLiebor.FL_Thoughts_Patch</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+		<stages>
+			<li>
+				<label>savage</label>
+				<description>Innate Savagery</description>
+				<baseOpinionOffset>-50</baseOpinionOffset>
+			</li>
+		</stages>
+		<modExtensions>
+			<li Class="FerLiebor.FL_Extension">
+				<hatedGenes>
+					<li>Fer_Liebor_Savage</li>
+				</hatedGenes>
+				<nullifyingGenes>
+					<li>Fer_Liebor_Savage</li>
+				</nullifyingGenes>
+			</li>
+		</modExtensions>
+	</ThoughtDef>
+	
+	<GeneDef>
+		<defName>Fer_Liebor_Pregnancy</defName>
+		<label>Rapid Gestation</label>
+		<description>Carriers of this gene will gestate offspring remarkably fast compared to most other xenotypes.</description>
+		<iconPath>UI/BunPreg</iconPath>
+		<displayCategory>Fer_Liebor_Genes</displayCategory>
+		<displayOrderInCategory>1</displayOrderInCategory>
+		<biostatCpx>0</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<modExtensions>
+			<li Class="VEF.Genes.GeneExtension">
+				<pregnancySpeedFactor>3</pregnancySpeedFactor>
+			</li>
+		</modExtensions>
+	</GeneDef>
+	
+	<GeneDef>
+		<defName>Fer_Liebor_Litters</defName>
+		<label>Litter Births</label>
+		<description>Carriers of this gene will gestate offspring in litters, typically of one to four kits.</description>
+		<iconPath>UI/BunPreg</iconPath>
+		<prerequisite>Fer_Liebor_Pregnancy</prerequisite>
+		<displayCategory>Fer_Liebor_Genes</displayCategory>
+		<biostatMet>0</biostatMet>
+		<biostatCpx>-1</biostatCpx>
+	</GeneDef>
+	
+	<GeneDef>
+		<defName>Fer_Liebor_Bloodlust</defName>
+		<label>Genetic Bloodlust</label>
+		<labelShortAdj>violent</labelShortAdj>
+		<description>Carriers of this gene are seemingly predisposed to enjoy violence and bloodshed.</description>
+		<displayCategory>Fer_Liebor_Genes</displayCategory>
+		<forcedTraits>
+			<li>
+				<def>Bloodlust</def>
+			</li>
+		</forcedTraits>
+		<iconPath>UI/BunViolence</iconPath>
+		<prerequisite>Fer_Liebor_Savage</prerequisite>
+		<displayOrderInCategory>1</displayOrderInCategory>
+		<biostatCpx>0</biostatCpx>
+		<biostatMet>1</biostatMet>
+	</GeneDef>
+	
+	<GeneDef>
+		<defName>Fer_Liebor_BadEating</defName>
+		<label>Devourer</label>
+		<labelShortAdj>devouring</labelShortAdj>
+		<description>Carriers of this gene will eat anything they can get their hands onto, from human corpses to raw food.</description>
+		<iconPath>UI/BunDevourer</iconPath>
+		<displayOrderInCategory>1</displayOrderInCategory>
+		<displayCategory>Fer_Liebor_Genes</displayCategory>
+		<forcedTraits>
+			<li>
+				<def>Trait_Omnivorous_Devourer</def>
+			</li>
+		</forcedTraits>
+		<dontMindRawFood>true</dontMindRawFood>
+		<biostatCpx>0</biostatCpx>
+		<biostatMet>-2</biostatMet>
+	</GeneDef>
+
+</Defs>

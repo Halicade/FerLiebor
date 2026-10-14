@@ -32,7 +32,10 @@ public static class Patch_PregnancyUtility_GetInheritedGenes
         }
         if (pawn != null) {
             success = true;
-            __result = pawn.genes.GenesListForReading.Select((Gene g) => g.def).ToList();
+            __result =
+            [
+                .. pawn.genes.GenesListForReading.Select(g => g.def)
+            ];
             return false;
         }
         return true;

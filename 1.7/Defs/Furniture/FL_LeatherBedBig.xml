@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="ArtableBedBase">
+    <defName>FL_LeatherBedBig</defName>
+    <label>large layered hides</label>
+    <description>A huge pile of mismatched hides and furs, thick and warm enough to cushion the floor beneath it. It makes for an alright place to sleep, and it's roomy enough for two to nest comfortably.</description>
+    <graphicData>
+      <texPath>Things/Furniture/FL_LeatherBedBig/FL_LeatherBedBig</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(2,2)</drawSize>
+      <damageData>
+        <rect>(0,0.05,2,1.95)</rect>
+      </damageData>
+    </graphicData>
+
+    <statBases>
+      <MaxHitPoints>120</MaxHitPoints>
+      <WorkToBuild>600</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <Mass>4.5</Mass>
+      <Beauty>-1</Beauty>
+      <BedRestEffectiveness>1</BedRestEffectiveness>
+      <Comfort>0.65</Comfort>
+      <ImmunityGainSpeedFactor>1.05</ImmunityGainSpeedFactor>
+      <SurgerySuccessChanceFactor>0.95</SurgerySuccessChanceFactor>
+      <BirthRitualQualityOffset MayRequire="Ludeon.RimWorld.Biotech">2</BirthRitualQualityOffset>
+    </statBases>
+
+    <passability>Standable</passability>
+    <pathCost>0</pathCost>
+    <size>(2,2)</size>
+    <stuffCategories>
+      <li>Leathery</li>
+      <li>Fabric</li>
+    </stuffCategories>
+    <costStuffCount>65</costStuffCount>
+
+    <building>
+      <bed_showSleeperBody>True</bed_showSleeperBody>
+      <bed_healPerDay>4</bed_healPerDay>
+    </building>
+    <fillPercent>0.4</fillPercent>
+    <techLevel>Neolithic</techLevel>
+
+    <comps>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>EndTable</li>
+          <li>Dresser</li>
+          <li MayRequire="Ludeon.RimWorld.Ideology">SleepAccelerator</li>
+        </linkableFacilities>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

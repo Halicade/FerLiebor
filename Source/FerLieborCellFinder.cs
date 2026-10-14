@@ -49,13 +49,13 @@ public static class FerLieborCellFinder
 
     private static bool TryFindEnclosedIndoorCell(out IntVec3 cell, Map map) {
         cell = IntVec3.Invalid;
-        List<IntVec3> list = new List<IntVec3>();
+        List<IntVec3> list = [];
         for (int i = 0; i < map.Size.z; i++) {
             for (int j = 0; j < map.Size.x; j++) {
                 IntVec3 intVec = new IntVec3(j, 0, i);
                 if (intVec.InBounds(map) && intVec.Roofed(map) && IsValidEmergenceCell(intVec, map)) {
                     Room room = intVec.GetRoom(map);
-                    if (room != null && !room.TouchesMapEdge) {
+                    if (room is { TouchesMapEdge: false }) {
                         list.Add(intVec);
                     }
                 }
@@ -70,7 +70,7 @@ public static class FerLieborCellFinder
 
     private static bool TryFindRoofedCell(out IntVec3 cell, Map map) {
         cell = IntVec3.Invalid;
-        List<IntVec3> list = new List<IntVec3>();
+        List<IntVec3> list = [];
         for (int i = 0; i < map.Size.z; i++) {
             for (int j = 0; j < map.Size.x; j++) {
                 IntVec3 intVec = new IntVec3(j, 0, i);
@@ -88,7 +88,7 @@ public static class FerLieborCellFinder
 
     private static bool TryFindAnyValidCell(out IntVec3 cell, Map map) {
         cell = IntVec3.Invalid;
-        List<IntVec3> list = new List<IntVec3>();
+        List<IntVec3> list = [];
         for (int i = 0; i < map.Size.z; i++) {
             for (int j = 0; j < map.Size.x; j++) {
                 IntVec3 intVec = new IntVec3(j, 0, i);

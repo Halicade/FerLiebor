@@ -9,4 +9,14 @@
         <li IfModActive="vanillaexpanded.vmemese">1.6/Mods/VEMemes</li>
         <li IfModActive="vanillaexpanded.vanillafoodvarietyexpanded">1.6/Mods/VEFoodVariety</li>
     </v1.6>
+
+    <v1.7>
+        <li>/</li>
+        <li>1.7</li>
+        <li IfModActive="Ludeon.RimWorld.Royalty">1.7/Mods/Rewrite</li>
+        <li IfModActive="Ludeon.RimWorld.Ideology">1.7/Mods/Ideology</li>
+        <li IfModActive="Ludeon.RimWorld.Anomaly">1.7/Mods/Anomaly</li>
+        <li IfModActive="vanillaexpanded.vmemese">1.7/Mods/VEMemes</li>
+        <li IfModActive="vanillaexpanded.vanillafoodvarietyexpanded">1.7/Mods/VEFoodVariety</li>
+    </v1.7>
 </loadFolders>

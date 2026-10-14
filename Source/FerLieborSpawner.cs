@@ -35,7 +35,10 @@ public class FerLieborSpawner
             generateFightersOnly = true,
             groupKind = PawnGroupKindDefOf.Combat
         };
-        List<Pawn> list = PawnGroupMakerUtility.GeneratePawns(parms).ToList();
+        List<Pawn> list =
+        [
+            .. PawnGroupMakerUtility.GeneratePawns(parms)
+        ];
         if (list.Count == 0) {
             Log.Warning("FerLieborSpawner: FeralWarren generated no pawns.");
             return;

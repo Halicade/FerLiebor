@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RulePackDef Name="NamerBunBase">
+    <defName>NamerPersonFer_Liebor</defName>
+    <rulePack>
+      <include>
+        <li>NamerFirstNamesFer_Liebor</li>
+        <li>NamerChosenNamesFer_Liebor</li>
+        <li>NamerNiceNamesFer_Liebor</li>
+        <li>NamerLastNamesFer_Liebor</li>
+      </include>
+      <rulesStrings>
+        <li>r_name(p=6)->[firstName] [lastName]</li>     <!-- compound -->
+        <li>r_name(p=10)->[chosenName] [lastName]</li>    <!-- chosen -->
+        <li>r_name(p=1)->[niceName] [lastName]</li>      <!-- nice -->
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+
+<!-- The idea behind their names is that they represent some kind of destiny for the child, whether that's something that the parent WANTS, or what they THINK will happen to their child
+It's not meant to be literal either. So like, some of the gross/nasty sounding ones can be that they hope their child's destiny is to inflict such things upon their enemies
+like, tornmeat or clawmold
+For some like deadmeat or rotfester though, it can be the parent thinking that they'll die soon, potentially because they're sickly or weak
+Because some of those children with nasty names obviously do survive to adulthood- and because, for any child, the destiny that parents had in mind for them obviously doesn't always line up with what they grow up to be/do,
+it's pretty common for adults to trade their "kit" compound name for a single name that aligns more with who they are when they grow up
+Their last names are compound of a mineral or stone + body part, because they believe that the 'strength' or 'spirit' of the object inhabits their bloodline -->
+
+
+
+
+  <!-- Compound First Names -->
+  <RulePackDef>
+    <defName>NamerFirstNamesFer_Liebor</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>firstName->[firstNamePrefix][firstNameSuffix]</li>
+
+        <!-- Prefixes -->
+        <li>firstNamePrefix->rot</li>
+        <li>firstNamePrefix->claw</li>
+        <li>firstNamePrefix->dead</li>
+        <li>firstNamePrefix->prowl</li>
+        <li>firstNamePrefix->skin</li>
+        <li>firstNamePrefix->grit</li>
+        <li>firstNamePrefix->ash</li>
+        <li>firstNamePrefix->snap</li>
+        <li>firstNamePrefix->groan</li>
+        <li>firstNamePrefix->sharp</li>
+        <li>firstNamePrefix->growl</li>
+        <li>firstNamePrefix->prick</li>
+        <li>firstNamePrefix->thorn</li>
+        <li>firstNamePrefix->stone</li>
+        <li>firstNamePrefix->torn</li>
+        <li>firstNamePrefix->black</li>
+        <li>firstNamePrefix->corpse</li>
+        <li>firstNamePrefix->carrion</li>
+        <li>firstNamePrefix->wound</li>
+
+        <!-- Suffixes -->
+        <li>firstNameSuffix->meat</li>
+        <li>firstNameSuffix->blood</li>
+        <li>firstNameSuffix->hiss</li>
+        <li>firstNameSuffix->crack</li>
+        <li>firstNameSuffix->fur</li>
+        <li>firstNameSuffix->plague</li>
+        <li>firstNameSuffix->mold</li>
+        <li>firstNameSuffix->bite</li>
+        <li>firstNameSuffix->ruin</li>
+        <li>firstNameSuffix->call</li>
+        <li>firstNameSuffix->fester</li>
+        <li>firstNameSuffix->trash</li>
+        <li>firstNameSuffix->tooth</li>
+        <li>firstNameSuffix->flesh</li>
+        <li>firstNameSuffix->beater</li>
+        <li>firstNameSuffix->fang</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <!-- Chosen Names -->
+  <RulePackDef>
+    <defName>NamerChosenNamesFer_Liebor</defName>
+    <rulePack>
+      <rulesRaw>
+        <li Class="Rule_NamePerson">
+          <keyword>chosenName</keyword>
+        </li>
+      </rulesRaw>
+      <rulesFiles>
+        <li>chosenName->Names/FL_chosenNames</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+
+  <!-- Nice Names -->
+  <RulePackDef>
+    <defName>NamerNiceNamesFer_Liebor</defName>
+    <rulePack>
+      <rulesRaw>
+        <li Class="Rule_NamePerson">
+          <keyword>niceName</keyword>
+        </li>
+      </rulesRaw>
+      <rulesFiles>
+        <li>niceName->Names/FL_niceNames</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+
+  <!-- Last Names -->
+  <RulePackDef>
+    <defName>NamerLastNamesFer_Liebor</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>lastName->[lastNamePrefix][lastNameSuffix]</li>
+
+        <!-- Prefixes -->
+        <li>lastNamePrefix->slate</li>
+        <li>lastNamePrefix->marble</li>
+        <li>lastNamePrefix->stone</li>
+        <li>lastNamePrefix->basalt</li>
+        <li>lastNamePrefix->obsidian</li>
+        <li>lastNamePrefix->steel</li>
+        <li>lastNamePrefix->iron</li>
+        <li>lastNamePrefix->copper</li>
+        <li>lastNamePrefix->flint</li>
+        <li>lastNamePrefix->salt</li>
+        <li>lastNamePrefix->tin</li>
+
+        <!-- Suffixes -->
+        <li>lastNameSuffix->blood</li>
+        <li>lastNameSuffix->flesh</li>
+        <li>lastNameSuffix->liver</li>
+        <li>lastNameSuffix->heart</li>
+        <li>lastNameSuffix->head</li>
+        <li>lastNameSuffix->tail</li>
+        <li>lastNameSuffix->belly</li>
+        <li>lastNameSuffix->lungs</li>
+        <li>lastNameSuffix->kidneys</li>
+        <li>lastNameSuffix->tongue</li>
+        <li>lastNameSuffix->eyes</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>

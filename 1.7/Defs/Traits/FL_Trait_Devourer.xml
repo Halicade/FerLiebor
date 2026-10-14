@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<TraitDef>
+    <defName>Trait_Omnivorous_Devourer</defName>
+    <commonality>0.1</commonality>
+    <degreeDatas>
+      <li>
+        <label>Omnivorous Devourer</label>
+        <description>There's nothing organic that {PAWN_nameDef} won't eat. After all, food is food, no matter its origin... Just watch out for poisoning.</description>
+        <allowedMeditationFocusTypes><li>Morbid</li></allowedMeditationFocusTypes>
+        <disallowedThoughtsFromIngestion>
+          <li>
+            <meatSource>Humanlike</meatSource>
+            <thoughts>
+              <li>AteRawFood</li>
+              <li>AteHumanlikeMeatDirect</li>
+              <li>AteHumanlikeMeatAsIngredient</li>
+			  <li>AteInsectMeatDirect</li>
+			  <li>AteInsectMeatAsIngredient</li>
+			  <li>AteRottenFood</li>
+			  <li>AteCorpse</li>
+        <li>AteBabyFood</li>
+			  <li>AteKibble</li>
+            </thoughts>
+          </li>
+        </disallowedThoughtsFromIngestion>
+		</li>
+    </degreeDatas>
+  </TraitDef>
+  
+  
+</Defs>

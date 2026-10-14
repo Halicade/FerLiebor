@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ScenarioDef ParentName="ScenarioBase">
+		<defName>FL_WarrenStart</defName>
+		<label>Scattered Warren</label>
+		<description>The Fer'Liebor have never been particularly good neighbors, so the annihilation of a Warren is an event that most would cheer at.\n\nUnfortunately for them- and fortunately for you- your species is nothing if not tenacious.\n\nThe mountains and its caves will give you safe haven. Rebuild your Warren, together with those that survived.\n\nNote: The Fer'Liebor are a species designed for a very specific style of play. They are awful with ranged weapons, primitive, reclusive, sensitive to sunlight, and widely hated by most other factions. This can make them difficult to play as and enjoy in a 'normal' playthrough!</description>
+		<scenario>
+			<summary>Five cavelings try to build a new Warren. Challenging.</summary>
+			<playerFaction>
+				<factionDef>PlayerWarren</factionDef>
+			</playerFaction>
+			<parts>
+				<!-- Config pages -->
+
+				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
+					<def>ConfigurePawnsXenotypes</def>
+					<pawnChoiceCount>5</pawnChoiceCount>
+					<customSummary>Start with 5 Fer'Liebori.</customSummary>
+					<xenotypeCounts>
+						<li>
+							<xenotype>Fer_Liebor</xenotype>
+							<count>5</count>
+							<requiredAtStart>true</requiredAtStart>
+						</li>
+					</xenotypeCounts>
+				</li>
+
+				<!-- Player spawn method-->
+
+				<li Class="ScenPart_PlayerPawnsArriveMethod">
+					<def>PlayerPawnsArriveMethod</def>
+					<method>Standing</method>
+				</li>
+
+				<!-- Game start dialog -->
+
+				<li Class="ScenPart_GameStartDialog">
+					<def>GameStartDialog</def>
+					<text>Brightness. Heat. Blood.\n\nThey came during the night, the surface-dwellers. You woke amidst the screams of your blood-brothers and sisters, to the scent of charred fur and boiling blood.\n\nThe tunnels were safe from many things- their sharp twists and tight turns were difficult, if not impossible, to squeeze through, let alone shoot a moving target in the deep dark. \n\nThey were not, however, safe from fire, nor from the stinging gas which burnt your throat and filled your lungs with painful smog.\n\nYou were lucky. You escaped.\n\nMost of your people did not.\n\nYou're just a handful, now, but you'll survive. And when you rebuild, those that killed your kin will make for wonderful prey.</text>
+					<closeSound>GameStartSting</closeSound>
+				</li>
+
+				<!-- Player pawns modifiers -->
+
+				<li Class="ScenPart_ForcedHediff">
+					<def>ForcedHediff</def>
+					<visible>false</visible>
+					<context>PlayerStarter</context>
+					<chance>0.5</chance>
+					<hediff>Malnutrition</hediff>
+					<severityRange>
+						<min>0.1</min>
+						<max>0.2</max>
+					</severityRange>
+				</li>
+				<li Class="ScenPart_SetNeedLevel">
+					<def>SetNeedLevel</def>
+					<visible>false</visible>
+					<context>PlayerStarter</context>
+					<chance>1.0</chance>
+					<need>Food</need>
+					<levelRange>
+						<min>0</min>
+						<max>0.2</max>
+					</levelRange>
+				</li>
+
+				<!-- Pawn details -->
+
+				<li Class="ScenPart_PawnFilter_Age">
+					<def>PawnFilter_Age</def>
+					<allowedAgeRange>10~25</allowedAgeRange>
+				</li>
+				<li Class="ScenPart_Naked">
+					<def>Naked</def>
+					<chance>1</chance>
+					<context>PlayerStarter</context>
+				</li>
+				<li Class="ScenPart_NoPossessions">
+					<def>NoPossessions</def>
+				</li>
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>Stonecutting</project>
+				</li>
+				<li Class="ScenPart_StartingResearch" MayRequire="Ludeon.RimWorld.Odyssey">
+					<def>StartingResearch</def>
+					<project>Fishing</project>
+				</li>
+
+				<!-- Incident details -->
+
+				<li Class="ScenPart_DisableIncident">
+					<def>DisableIncident</def>
+					<incident>FL_BurrowingRaid</incident>
+				</li>
+				<li Class="ScenPart_DisableIncident">
+					<def>DisableIncident</def>
+					<incident>VisitorGroup</incident>
+				</li>
+				<li Class="ScenPart_DisableIncident">
+					<def>DisableIncident</def>
+					<incident>OrbitalTraderArrival</incident>
+				</li>
+				<li Class="ScenPart_DisableIncident" MayRequire="Ludeon.RimWorld.Royalty">
+					<def>DisableIncident</def>
+					<incident>MechCluster</incident>
+				</li>
+				<li Class="ScenPart_DisableIncident">
+					<def>DisableIncident</def>
+					<incident>TravelerGroup</incident>
+				</li>
+				<li Class="ScenPart_DisableIncident">
+					<def>DisableIncident</def>
+					<incident>WandererJoin</incident>
+				</li>
+				<li Class="ScenPart_DisableIncident">
+					<def>DisableIncident</def>
+					<incident>StrangerInBlackJoin</incident>
+				</li>
+				<li Class="ScenPart_DisableIncident">
+					<def>DisableIncident</def>
+					<incident>TraderCaravanArrival</incident>
+				</li>
+			</parts>
+		</scenario>
+	</ScenarioDef>
+
+	<ScenarioDef ParentName="ScenarioBase">
+		<defName>FL_LoneStart</defName>
+		<label>Abandoned Kit</label>
+		<description>Though a frowned-upon practice in many Warrens, leaving one's offspring to die isn't entirely unheard of in times of famine or drought- particularly so, if a kit appears sickly or runty in some manner.\n\nYou are one of such kits, left to fend for yourself at a young age due to some perceived fault of your character by your parents.\n\nYou have no home to call your own, no Warren to return to, and no kin to rely on. Keep moving, keep surviving. Don't look back.\n\nNote: This is essentially the normal Fer'Liebor start, except with one single person. Made with a nomadic single-colonist playstyle in mind. The positive side is that, unlike the normal Warren start, your faction relations aren't hostile from the start!</description>
+		<scenario>
+			<summary>Five cavelings try to build a new Warren. Challenging.</summary>
+			<playerFaction>
+				<factionDef>PlayerLoneKit</factionDef>
+			</playerFaction>
+			<parts>
+				<!-- Config pages -->
+
+				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
+					<def>ConfigurePawnsXenotypes</def>
+					<pawnChoiceCount>1</pawnChoiceCount>
+					<customSummary>Start with a single Fer'Liebor teenager.</customSummary>
+					<xenotypeCounts>
+						<li>
+							<xenotype>Fer_Liebor</xenotype>
+							<count>1</count>
+							<requiredAtStart>true</requiredAtStart>
+						</li>
+					</xenotypeCounts>
+				</li>
+
+				<!-- Player spawn method-->
+
+				<li Class="ScenPart_PlayerPawnsArriveMethod">
+					<def>PlayerPawnsArriveMethod</def>
+					<method>Standing</method>
+				</li>
+
+				<!-- Game start dialog -->
+
+				<li Class="ScenPart_GameStartDialog">
+					<def>GameStartDialog</def>
+					<text>You are alone, as you always have been.\n\nEver since you first knew to speak and stand on your shaking legs, this has been your life.\n\nNo warren, no home, no kin.\n\nMaybe it was that you were too sickly, or perhaps too much of a runt, or you were just unwanted; Either way, you've been wandering on your own for as long as you can remember.\n\nAnother day dawns, the scalding sun on the horizon stinging your eyes. The exhaustion of a night spent walking seeps through your tense muscles.\n\nYou should find shelter from the sunlit haze- and perhaps, when night comes again, food.</text>
+					<closeSound>GameStartSting</closeSound>
+				</li>
+
+				<!-- Player pawns modifiers -->
+
+				<li Class="ScenPart_ForcedTrait">
+					<def>ForcedTrait</def>
+					<chance>1.0</chance>
+					<context>PlayerStarter</context>
+					<trait>Recluse</trait>
+				</li>
+				<li Class="ScenPart_SetNeedLevel">
+					<def>SetNeedLevel</def>
+					<visible>false</visible>
+					<context>PlayerStarter</context>
+					<chance>1.0</chance>
+					<need>Rest</need>
+					<levelRange>
+						<min>0</min>
+						<max>0.3</max>
+					</levelRange>
+				</li>
+
+				<!-- Pawn details -->
+
+				<li Class="ScenPart_PawnFilter_Age">
+					<def>PawnFilter_Age</def>
+					<allowedAgeRange>10~16</allowedAgeRange>
+				</li>
+				<li Class="ScenPart_Naked">
+					<def>Naked</def>
+					<chance>1</chance>
+					<context>PlayerStarter</context>
+				</li>
+				<li Class="ScenPart_NoPossessions">
+					<def>NoPossessions</def>
+				</li>
+				<li Class="ScenPart_StartingResearch" MayRequire="Ludeon.RimWorld.Odyssey">
+					<def>StartingResearch</def>
+					<project>Fishing</project>
+				</li>
+
+				<!-- Incident details -->
+				<li Class="ScenPart_DisableIncident">
+					<def>DisableIncident</def>
+					<incident>FL_BurrowingRaid</incident>
+				</li>
+				<li Class="ScenPart_DisableIncident">
+					<def>DisableIncident</def>
+					<incident>OrbitalTraderArrival</incident>
+				</li>
+				<li Class="ScenPart_DisableIncident" MayRequire="Ludeon.RimWorld.Royalty">
+					<def>DisableIncident</def>
+					<incident>MechCluster</incident>
+				</li>
+				<li Class="ScenPart_DisableIncident">
+					<def>DisableIncident</def>
+					<incident>TravelerGroup</incident>
+				</li>
+				<li Class="ScenPart_DisableIncident">
+					<def>DisableIncident</def>
+					<incident>WandererJoin</incident>
+				</li>
+				<li Class="ScenPart_DisableIncident">
+					<def>DisableIncident</def>
+					<incident>StrangerInBlackJoin</incident>
+				</li>
+				<li Class="ScenPart_DisableIncident">
+					<def>DisableIncident</def>
+					<incident>TraderCaravanArrival</incident>
+				</li>
+			</parts>
+		</scenario>
+	</ScenarioDef>
+</Defs>

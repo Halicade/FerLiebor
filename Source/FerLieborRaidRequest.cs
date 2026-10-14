@@ -12,7 +12,7 @@ public class FerLieborRaidRequest : IExposable
 
     public int groupCount;
 
-    public bool spawnAnywhereIfNoGoodCell;
+    private bool spawnAnywhereIfNoGoodCell;
 
     public List<IntVec3> emergencePoints = [];
 

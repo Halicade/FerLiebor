@@ -6,17 +6,19 @@ namespace FerLiebor;
 public class StatPart_LearningRate : StatPart
 {
 
+#pragma warning disable CS0649 // Field is never assigned to, and will always have its default value
     private SimpleCurve curve;
+#pragma warning restore CS0649 // Field is never assigned to, and will always have its default value
 
     public override void TransformValue(StatRequest req, ref float val) {
-        if (req.HasThing && req.Thing is Pawn pawn && IsFerLiebor(pawn)) {
+        if (req is { HasThing: true, Thing: Pawn pawn } && IsFerLiebor(pawn)) {
             val *= FerLieborAgeFactor(pawn);
         }
     }
 
 
     public override string ExplanationPart(StatRequest req) {
-        if (req.HasThing && req.Thing is Pawn pawn && IsFerLiebor(pawn)) {
+        if (req is { HasThing: true, Thing: Pawn pawn } && IsFerLiebor(pawn)) {
             return "FL_StatsReportIsFerLiebor".Translate() + (": x" + FerLieborAgeFactor(pawn).ToStringPercent());
         }
 

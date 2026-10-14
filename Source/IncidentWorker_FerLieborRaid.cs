@@ -9,11 +9,12 @@ namespace FerLiebor;
 
 public class IncidentWorker_FerLieborRaid : IncidentWorker
 {
-	public static readonly SimpleCurve PointsFactorCurve = new SimpleCurve
-	{
+	private static readonly SimpleCurve PointsFactorCurve =
+	[
+
 		new CurvePoint(0f, 0.7f),
 		new CurvePoint(5000f, 0.45f)
-	};
+	];
 
 	private const int DefaultDelayTicks = 3200;
 
